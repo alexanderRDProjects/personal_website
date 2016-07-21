@@ -13,7 +13,7 @@ $rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
 $row = pg_fetch_row($rs);
 
 echo $row[0] . "\n";
-
+echo "test"."\n";
 pg_close($con); 
 
 ?>
