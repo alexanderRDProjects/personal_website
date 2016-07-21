@@ -25,4 +25,4 @@ $ret = pg_query($con, $sql);
 pg_close($con);
 
 ?>
-stufff
+stuff
