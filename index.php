@@ -4,21 +4,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script>
-function check_sign(bool){
-	if (bool) {
-		console.log("Signed In")
-	} else {
-		console.log("Not Signed In")
-	}
-}
+var SignedIn = False
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
+  SignedIn = True;
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail());
 }
-  function signOut() {
+function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
       console.log('User signed out.');
