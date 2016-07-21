@@ -5,7 +5,7 @@
 </head>
 <body>
 <?php 
-pg_query("CREATE DATABASE projects")
+echo pg_query("CREATE DATABASE projects")
 ?>
 </body>
 </html>
