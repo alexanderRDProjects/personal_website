@@ -9,12 +9,19 @@ $port = 5432;
 $con = pg_connect("host=ec2-54-217-243-228.eu-west-1.compute.amazonaws.com dbname=d5rp8t24likiqk user=shozqbxwvyjkrp password=5YW1EECQcJb5-9RGbr4gHX9_Pz port=5432")
     or die ("Could not connect to server\n"); 
 
-$query = "SELECT VERSION()"; 
-$rs = pg_query($con, $query) or die("Cannot execute query: $query\n"); 
-$row = pg_fetch_row($rs);
-
-echo $row[0] . "\n";
-echo "test"."\n";
+$query = <<<EOF
+      CREATE TABLE USER
+      (ID INT PRIMARY KEY     NOT NULL,
+	  GKEY           TEXT     NOT NULL,
+      NAME           TEXT     NOT NULL,
+      EMAIL          TEXT     NOT NULL);
+EOF;
+$ret = pg_query($con, $sql);
+   if(!$ret){
+      echo pg_last_error($con);
+   } else {
+      echo "Table created successfully\n";
+   }
 pg_close($con);
 
 ?>
