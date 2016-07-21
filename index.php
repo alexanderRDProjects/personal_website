@@ -26,26 +26,5 @@ function signOut() {
 <p>sign in with google</p>
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 <a href="#" onclick="signOut();">Sign out</a>
-sutff
-<?php 
-
-$host = "localhost"; 
-$user = "user12"; 
-$pass = "34klq*"; 
-$db = "testdb"; 
-
-$con = pg_connect("host=localhost dbname=testdb user=user12 password=34klq*")
-    or die ("Could not connect to server\n"); 
-
-$query = "SELECT VERSION()"; 
-$rs = pg_query($con, $query) or die("Cannot execute query: $query\n"); 
-$row = pg_fetch_row($rs);
-
-echo $row[0] . "\n";
-echo "test"."\n";
-pg_close($con); 
-
-?>
-stufff
 </body>
 </html>
