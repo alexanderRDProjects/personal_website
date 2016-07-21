@@ -7,5 +7,6 @@
 <?php 
 echo pg_query("CREATE DATABASE projects")
 ?>
+<p>also</p>
 </body>
 </html>
