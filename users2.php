@@ -17,3 +17,4 @@ echo "test"."\n";
 pg_close($con); 
 
 ?>
+stufff
