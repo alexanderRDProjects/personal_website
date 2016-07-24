@@ -27,7 +27,7 @@ function signOut() {
 <li>home</li>
 <li>about</li>
 <li>projects</li>
-<li>random project<li>
+<li>random project</li>
 </ul>
 <p>sign in with google</p>
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
