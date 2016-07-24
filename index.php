@@ -30,8 +30,8 @@ function signOut() {
 <span class = "container-fluid">
 <ul>
 <li><a href = "/">home</a></li>
-<li><a href = "/about/">about</li>
-<li>projects</li>
+<li><a href = "/about/">about</a></li>
+<li><a href = "/projects/view/">projects</a></li>
 <li><a href = "/projects/">random projects</a></li>
 </ul>
 <p>sign in with google</p>
