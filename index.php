@@ -1,5 +1,9 @@
+<!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -23,14 +27,16 @@ function signOut() {
 <meta name="google-signin-client_id" content="434726568124-obcv7f1fmpqse2gard1nh55513av5vff.apps.googleusercontent.com">
 </head>
 <body>
+<span class = "container-fluid">
 <ul>
-<li>home</li>
-<li>about</li>
+<li><a href = "/">home</a></li>
+<li><a href = "/about/">about</li>
 <li>projects</li>
-<li>random project</li>
+<li><a href = "/projects/">random projects</a></li>
 </ul>
 <p>sign in with google</p>
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 <a href="#" onclick="signOut();">Sign out</a>
+</span>
 </body>
 </html>
