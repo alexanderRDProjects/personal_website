@@ -23,6 +23,12 @@ function signOut() {
 <meta name="google-signin-client_id" content="434726568124-obcv7f1fmpqse2gard1nh55513av5vff.apps.googleusercontent.com">
 </head>
 <body>
+<ul>
+<li>home</li>
+<li>about</li>
+<li>projects</li>
+<li>random project<li>
+</ul>
 <p>sign in with google</p>
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 <a href="#" onclick="signOut();">Sign out</a>
