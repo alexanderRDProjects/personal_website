@@ -1,3 +1,11 @@
+<?php 
+if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
+    $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    header('HTTP/1.1 301 Moved Permanently');
+    header('Location: ' . $redirect);
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,6 +55,7 @@ function signOut() {
 <h1> Coding, Web Design and More </h1>
 <p>where it all happens</p>
 </div>
+<
 </span>
 </body>
 </html>
