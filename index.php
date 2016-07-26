@@ -75,10 +75,11 @@ function signOut() {
       <li><a href="#">Page 3</a></li> 
     </ul>
 	<ul class="nav navbar-nav navbar-right">
-	<li>sign in with google <div class="g-signin2" data-onsuccess="onSignIn"></div></li>
+	<li>sign in with google</li>
 	</ul>
   </div>
 </nav>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
 <ul>
 <li><a href = "/">home</a></li>
 <li><a href = "/about/">about</a></li>
