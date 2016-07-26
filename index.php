@@ -27,7 +27,6 @@ function signOut() {
 <meta name="google-signin-client_id" content="434726568124-obcv7f1fmpqse2gard1nh55513av5vff.apps.googleusercontent.com">
 </head>
 <body>
-<div class="jumbotron text-center">
 <span class = "container-fluid">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -45,6 +44,7 @@ function signOut() {
 	</ul>
   </div>
 </nav>
+<div class="jumbotron text-center">
 <h1> Coding, Web Design and More </h1>
 <p>where it all happens</p>
 </div>
