@@ -35,8 +35,8 @@ function signOut() {
     </div>
     <ul class="nav navbar-nav">
 		<li><a href="/">Home</a></li>
-		<li class="active"><a href = "/about/">About</a></li>
-		<li><a href = "/projects/">Projects</a></li>
+		<li><a href = "/about/">About</a></li>
+		<li class="active"><a href = "/projects/">Projects</a></li>
 		<li><a href = "/projects/random">Random Project</a></li>
     </ul>
 	<ul class="nav navbar-nav navbar-right">
@@ -45,7 +45,7 @@ function signOut() {
   </div>
 </nav>
 <div class="jumbotron text-center">
-<h1> About </h1>
+<h1> Projects </h1>
 </div>
 </span>
 </body>

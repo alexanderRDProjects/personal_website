@@ -36,8 +36,8 @@ function signOut() {
     <ul class="nav navbar-nav">
 		<li class="active"><a href="/">Home</a></li>
 		<li><a href = "/about/">About</a></li>
-		<li><a href = "/projects/view/">Projects</a></li>
-		<li><a href = "/projects/">Random Project</a></li>
+		<li><a href = "/projects/">Projects</a></li>
+		<li><a href = "/projects/random/">Random Project</a></li>
     </ul>
 	<ul class="nav navbar-nav navbar-right">
 	<li><a href="#"><div class="g-signin2" data-onsuccess="onSignIn"></div></a></li> 
