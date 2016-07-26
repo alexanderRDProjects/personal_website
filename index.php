@@ -79,16 +79,7 @@ function signOut() {
 	</ul>
   </div>
 </nav>
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
-<ul>
-<li><a href = "/">home</a></li>
-	<li><a href = "/about/">about</a></li>
-	<li><a href = "/projects/view/">projects</a></li>
-	<li><a href = "/projects/">random projects</a></li>
-</ul>
-<p>sign in with google</p>
-
-<a href="#" onclick="signOut();">Sign out</a>
+<h1> Home Page </h1>
 </span>
 </body>
 </html>
