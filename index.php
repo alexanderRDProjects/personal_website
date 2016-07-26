@@ -74,6 +74,9 @@ function signOut() {
       <li><a href="#">Page 2</a></li> 
       <li><a href="#">Page 3</a></li> 
     </ul>
+	<ul class="nav navbar-nav navbar-right">
+	<li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
+	</ul>
   </div>
 </nav>
 <ul>
@@ -83,7 +86,7 @@ function signOut() {
 <li><a href = "/projects/">random projects</a></li>
 </ul>
 <p>sign in with google</p>
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
 <a href="#" onclick="signOut();">Sign out</a>
 </span>
 </body>
