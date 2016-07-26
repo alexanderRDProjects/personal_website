@@ -1,13 +1,13 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<script src="http://apis.google.com/js/platform.js" async defer></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script>
 var SignedIn = false
 function onSignIn(googleUser) {
@@ -35,8 +35,8 @@ function signOut() {
       <a class="navbar-brand" href="#">Alexander Roberts Dunn Projects</a>
     </div>
     <ul class="nav navbar-nav">
-		<li><a href="#">Home</a></li>
-		<li class="active"><a href = "/about/">About</a></li>
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href = "/about/">About</a></li>
 		<li><a href = "/projects/view/">Projects</a></li>
 		<li><a href = "/projects/">Random Project</a></li>
     </ul>
