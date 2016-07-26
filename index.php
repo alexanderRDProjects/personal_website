@@ -75,7 +75,7 @@ function signOut() {
       <li><a href="#">Page 3</a></li> 
     </ul>
 	<ul class="nav navbar-nav navbar-right">
-	<li>sign in with google</li>
+	<li><a href="#">Page 3</a></li> 
 	</ul>
   </div>
 </nav>
