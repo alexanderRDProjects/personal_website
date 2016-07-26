@@ -44,7 +44,9 @@ function signOut() {
 	</ul>
   </div>
 </nav>
+<div class="jumbotron text-center">
 <h1> About </h1>
+</div>
 </span>
 </body>
 </html>
