@@ -1,3 +1,6 @@
+<?php
+$db = pg_connect("host=ec2-54-217-243-228.eu-west-1.compute.amazonaws.com dbname=d5rp8t24likiqk user=shozqbxwvyjkrp port=5432 password=5YW1EECQcJb5-9RGbr4gHX9_Pz");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,7 +50,13 @@ function signOut() {
 <h1> Coding, Web Design and More </h1>
 <p>where it all happens</p>
 </div>
-<
+<?php
+if(!$db){
+      echo "Error : Unable to open database\n";
+   } else {
+      echo "Opened database successfully\n";
+   }
+?>
 </span>
 </body>
 </html>
