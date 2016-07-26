@@ -69,10 +69,10 @@ function signOut() {
       <a class="navbar-brand" href="#">WebSiteName</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li> 
-      <li><a href="#">Page 3</a></li> 
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href = "/about/">About</a></li>
+		<li><a href = "/projects/view/">Projects</a></li>
+		<li><a href = "/projects/">Random Project</a></
     </ul>
 	<ul class="nav navbar-nav navbar-right">
 	<li><a href="#"><div class="g-signin2" data-onsuccess="onSignIn"></div></a></li> 
@@ -82,9 +82,9 @@ function signOut() {
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 <ul>
 <li><a href = "/">home</a></li>
-<li><a href = "/about/">about</a></li>
-<li><a href = "/projects/view/">projects</a></li>
-<li><a href = "/projects/">random projects</a></li>
+	<li><a href = "/about/">about</a></li>
+	<li><a href = "/projects/view/">projects</a></li>
+	<li><a href = "/projects/">random projects</a></li>
 </ul>
 <p>sign in with google</p>
 
