@@ -75,7 +75,7 @@ function signOut() {
       <li><a href="#">Page 3</a></li> 
     </ul>
 	<ul class="nav navbar-nav navbar-right">
-	<li><a href="#">Page 3</a></li> 
+	<li><a href="#"><div class="g-signin2" data-onsuccess="onSignIn"></div></a></li> 
 	</ul>
   </div>
 </nav>
