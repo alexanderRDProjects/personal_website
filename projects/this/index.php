@@ -24,10 +24,12 @@ EOF;
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script>
 var SignedIn = false
+var Name = "None"
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   SignedIn = true;
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  Name = profile.getName();
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail());
@@ -39,8 +41,7 @@ function signOut() {
     });
   };
 function newcomment () {
-	 var profile = googleUser.getBasicProfile();
-	 window.location = "\new.php?name"+profile.getName()+"&comment="+document.getElementById("comment");
+	 window.location = "\new.php?name"+Name+"&comment="+document.getElementById("comment");
  };
 </script>
 <meta name="google-signin-client_id" content="434726568124-obcv7f1fmpqse2gard1nh55513av5vff.apps.googleusercontent.com">
