@@ -69,10 +69,10 @@ comments
 <?php
 //var_dump(pg_fetch_all($ret));
 while($row = pg_fetch_row($ret)){
-      echo "ID = ". $row[0] . "\n";
+      echo "ID = ". $row[2] . "\n";
       echo "NAME = ". $row[1] ."\n";
       echo "ADDRESS = ". $row[2] ."\n";
-      echo "SALARY =  ".$row[4] ."\n\n";
+      echo "SALARY =  ".$row[3] ."\n\n";
    }
 ?>
 </p>
