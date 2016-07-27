@@ -20,6 +20,7 @@ EOF;
       exit;
    } 
    echo $ret;
+   echo pg_fetch_all($ret);
    echo "Operation done successfully\n";
    pg_close($db);
 ?>
