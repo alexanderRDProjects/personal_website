@@ -38,6 +38,10 @@ function signOut() {
       console.log('User signed out.');
     });
   }
+ function new () {
+	 var profile = googleUser.getBasicProfile();
+	 window.location = "\new.php?name"+profile.getName()+"&comment="+document.getElementById("comment");
+ }
 </script>
 <meta name="google-signin-client_id" content="434726568124-obcv7f1fmpqse2gard1nh55513av5vff.apps.googleusercontent.com">
 </head>
@@ -70,11 +74,11 @@ comments
 //var_dump(pg_fetch_all($ret));
 while($row = pg_fetch_row($ret)){
       echo "Name = ". $row[2] . "\n";
-      echo "Comment =  ".$row[3] ."\n\n";
+      echo "Comment =  ".$row[3] ."\n\n";<
    }
 ?>
 </p>
-<p>add new comment <form action="new.php"><input type="text" name="comment"/><input type="submit"/></form></p>
+<p>add new comment <input type="text" id="comment"/><input type="submit" onclick="new()"/></p>
 </div>
 </span>
 </body>
