@@ -1,5 +1,5 @@
 <?php
-echo "m".$_GET["duck"]."m";
+//echo "m".$_GET["duck"]."m";
 $duck = $_GET["duck"];
 if ($duck == "true"){
 	echo "hello ducky user";
