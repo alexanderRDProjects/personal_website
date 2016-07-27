@@ -37,11 +37,11 @@ function signOut() {
     auth2.signOut().then(function () {
       console.log('User signed out.');
     });
-  }
+  };
  function new () {
 	 var profile = googleUser.getBasicProfile();
 	 window.location = "\new.php?name"+profile.getName()+"&comment="+document.getElementById("comment");
- }
+ };
 </script>
 <meta name="google-signin-client_id" content="434726568124-obcv7f1fmpqse2gard1nh55513av5vff.apps.googleusercontent.com">
 </head>
