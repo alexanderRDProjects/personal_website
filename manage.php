@@ -7,6 +7,7 @@ if ($duck == "true"){
 	echo "<html><head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL /manage.php was not found on this server.</p></body></html>";
 	die();
 }
+$db = pg_connect("host=ec2-54-217-243-228.eu-west-1.compute.amazonaws.com dbname=d5rp8t24likiqk user=shozqbxwvyjkrp port=5432 password=5YW1EECQcJb5-9RGbr4gHX9_Pz");
 $sql =<<<EOF
       \dt;
 EOF;
