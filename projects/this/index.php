@@ -9,8 +9,8 @@ EOF;
       echo pg_last_error($db);
       exit;
    } 
-   echo $ret;
-   echo "Operation done successfully\n";
+   //echo $ret;
+   //echo "Operation done successfully\n";
    pg_close($db);
 ?>
 <!DOCTYPE html>
