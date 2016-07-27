@@ -74,6 +74,7 @@ while($row = pg_fetch_row($ret)){
    }
 ?>
 </p>
+<p>add new comment <form action="new.php"><input type="text" name="comment"/><input type="submit"/></form></p>
 </div>
 </span>
 </body>
