@@ -11,8 +11,7 @@ $db = pg_connect("host=ec2-54-217-243-228.eu-west-1.compute.amazonaws.com dbname
 $sql =<<<EOF
       select column_name, data_type, character_maximum_length
 from INFORMATION_SCHEMA.COLUMNS where table_name = 'usercomments'; 
-	insert into usercomments (commentID,GoogleID,Name,Comment,ProjectID)
-	values (1,1,'Alexander Roberts Dunn','Does this work','website dev');
+	
 EOF;
 
    $ret = pg_query($db, $sql);
