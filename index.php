@@ -56,7 +56,8 @@ function signOut() {
 <h4> Built With </h4>
 <div class="row">
     <div class="col-sm-4">heroku</div>
-    <div class="col-sm-4">php</div>
+    <div class="col-sm-4"><p>php</p><img src="php-logo.gif"/></div>
+	
     <div class="col-sm-4">bootstrap</div>
   </div>
 </div>
