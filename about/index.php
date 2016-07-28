@@ -49,7 +49,6 @@ function signOut() {
 ">
 <h1> About </h1>
 <div class="row">
-    <div class="col-sm-4"/>
     <div class="col-sm-4">
 	<p>descritpion of me and the stuff i am doing and other stuff like that</p>
 	</div>
