@@ -26,11 +26,6 @@ function signOut() {
     });
   }
 </script>
-<style>
-body {
-	background-image: url("background.jpg");
-}
-</style>
 <meta name="google-signin-client_id" content="434726568124-obcv7f1fmpqse2gard1nh55513av5vff.apps.googleusercontent.com">
 </head>
 <body>
@@ -63,5 +58,8 @@ if(!$db){
    }
 ?>
 </span>
+<div style='position:absolute;z-index:0;left:0;top:0;width:100%;height:100%'>
+  <img src='background.jpg' style='width:100%;height:100%' alt='[]' />
+</div>
 </body>
 </html>
