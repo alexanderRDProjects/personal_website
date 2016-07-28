@@ -51,8 +51,6 @@ function signOut() {
 ">
 <h1> Coding, Web Design and More </h1>
 <p>where it all happens</p>
-</div>
-<div class = "jumbotron text-center">
 <h4> Built With </h4>
 <p><br></p>
 <div class="row">
