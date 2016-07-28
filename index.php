@@ -4,6 +4,7 @@ $db = pg_connect("host=ec2-54-217-243-228.eu-west-1.compute.amazonaws.com dbname
 <!DOCTYPE html>
 <html>
 <head>
+<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
