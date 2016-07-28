@@ -50,8 +50,9 @@ function signOut() {
     background-color: rgba(238,238,238,0.5);
 ">
 <h1> Coding, Web Design and More </h1>
-<p>where it all happens</p>
-<h4> Built With </h4>
+<h4>where it all happens</h4>
+<p><br></p>
+<h2> Built With </h2>
 <p><br></p>
 <div class="row">
     <div class="col-sm-4">
