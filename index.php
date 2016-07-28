@@ -46,7 +46,9 @@ function signOut() {
 	</ul>
   </div>
 </nav>
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" style="
+    background-color: rgba(238,238,238,0.5);
+">
 <h1> Coding, Web Design and More </h1>
 <p>where it all happens</p>
 </div>
