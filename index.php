@@ -56,8 +56,18 @@ function signOut() {
 <h4> Built With </h4>
 <p><br></p>
 <div class="row">
-    <div class="col-sm-4"><img src="heroku-logo.jpg"/></div>
-    <div class="col-sm-4"><img src="php-logo.gif"/></div>
+    <div class="col-sm-4">
+	<img src="heroku-logo.jpg" style="
+    width: 100%;
+    height: 100%;
+">
+	</div>
+    <div class="col-sm-4">
+	<img src="php-logo.gif" style="
+    width: 60%;
+    /* height: 100%; */
+">
+	</div>
 	
     <div class="col-sm-4"><img src="bootstrap-logo.png"/></div>
   </div>
