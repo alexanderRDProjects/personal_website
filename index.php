@@ -54,20 +54,14 @@ function signOut() {
 </div>
 <div class = "jumbotron text-center">
 <h4> Built With </h4>
+<p><br></p>
 <div class="row">
-    <div class="col-sm-4">heroku</div>
+    <div class="col-sm-4"><img src="heroku-logo.jpg"/></div>
     <div class="col-sm-4"><img src="php-logo.gif"/></div>
 	
-    <div class="col-sm-4">bootstrap</div>
+    <div class="col-sm-4"><img src="bootstrap-logo.png"/></div>
   </div>
 </div>
-<?php
-if(!$db){
-      echo "Error : Unable to open database\n";
-   } else {
-      echo "Opened database successfully\n";
-   }
-?>
 </span>
 <div style='position:absolute;z-index:-15;left:0;top:0;width:100%;height:100%'>
   <img src='background.jpg' style='width:100%;height:100%' alt='[]' />
