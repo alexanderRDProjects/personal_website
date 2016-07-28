@@ -49,7 +49,8 @@ function signOut() {
 ">
 <h1> About </h1>
 <div class="row">
-    <div class="col-sm-10">
+    <div class="col-sm-4"/>
+    <div class="col-sm-4">
 	<p>descritpion of me and the stuff i am doing and other stuff like that</p>
 	</div>
 	<div class="col-sm-2">
@@ -57,6 +58,7 @@ function signOut() {
     width: 100%;
     /* height: 100%; */
 ">
+	<div class="col-sm-2"/>
 	</div>
 </div>
 </div>
