@@ -55,9 +55,9 @@ function signOut() {
 <div class = "jumbotron text-center">
 <h4> Built With </h4>
 <div class="row">
-    <div class="col-*-*">heroku</div>
-    <div class="col-*-*">php</div>
-    <div class="col-*-*">bootstrap</div>
+    <div class="col-sm-4">heroku</div>
+    <div class="col-sm-4">php</div>
+    <div class="col-sm-4">bootstrap</div>
   </div>
 </div>
 <?php
