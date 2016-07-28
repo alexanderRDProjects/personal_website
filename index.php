@@ -26,6 +26,11 @@ function signOut() {
     });
   }
 </script>
+<style>
+body {
+	background-image: url("background.png");
+}
+</style>
 <meta name="google-signin-client_id" content="434726568124-obcv7f1fmpqse2gard1nh55513av5vff.apps.googleusercontent.com">
 </head>
 <body>
