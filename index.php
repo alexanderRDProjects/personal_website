@@ -52,7 +52,7 @@ function signOut() {
 <h1> Coding, Web Design and More </h1>
 <p>where it all happens</p>
 </div>
-<div class = ="jumbotron text-center">
+<div class = "jumbotron text-center">
 <h4> Built With </h4>
 <div class="row">
     <div class="col-*-*">heroku</div>
