@@ -49,10 +49,10 @@ function signOut() {
 ">
 <h1> About </h1>
 <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-10">
 	<p>descritpion of me and the stuff i am doing and other stuff like that</p>
 	</div>
-	<div class="col-sm-6">
+	<div class="col-sm-2">
 	<img src="me.png" style="
     width: 100%;
     /* height: 100%; */
