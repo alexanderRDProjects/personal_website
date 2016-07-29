@@ -78,12 +78,12 @@ while($row = pg_fetch_row($ret)){
 	$sqli =<<<EOF
 	"select name from userdetails where userid == 1"
 EOF;
-	$ret = pg_query($db, $sql);
-   if(!$ret){
+	$rete = pg_query($db, $sqli);
+   if(!$rete){
       echo pg_last_error($db);
       exit;
    } 
-	var_dump(pg_fetch_all($userdb));
+	var_dump(pg_fetch_all($rete));
       echo "Name = ". $row[2] . "\n";
       echo "Comment =  ".$row[3] ."\n\n";
    }
