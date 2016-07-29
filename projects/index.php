@@ -66,7 +66,7 @@ function signOut() {
 <?php
 //var_dump(pg_fetch_all($ret));
 while($row = pg_fetch_row($ret)){
-      echo "<a href= 'projects/"strtolower(implode("-",explode(" ",$row[2])"'><h4>".$row[2]))). "</h4></a><p>Tagged : ".$row[3] ."</p>";
+      echo "<a href= 'projects/".strtolower(implode("-",explode(" ",$row[2])"'><h4>".$row[2]))). "</h4></a><p>Tagged : ".$row[3] ."</p>";
    }
 ?>
 </p>
