@@ -75,7 +75,7 @@ comments
 //var_dump(pg_fetch_all($ret));
 while($row = pg_fetch_row($ret)){
       echo "Name = ". $row[2] . "\n";
-      echo "Comment =  ".$row[3] ."\n\n";
+      echo "Comment =  ".$row[1] ."\n\n";
    }
 ?>
 </p>
