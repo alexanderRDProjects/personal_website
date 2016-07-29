@@ -11,7 +11,7 @@ EOF;
    } 
    //echo $ret;
    //echo "Operation done successfully\n";
-   pg_close($db);
+   
 ?>
 <!DOCTYPE html>
 <html>
@@ -74,7 +74,15 @@ comments
 <?php
 //var_dump(pg_fetch_all($ret));
 while($row = pg_fetch_row($ret)){
-	$userdb = pg_query($db,"select name from userdetails where userid == 1");
+	
+	$sqli =<<<EOF
+	"select name from userdetails where userid == 1"
+EOF;
+	$ret = pg_query($db, $sql);
+   if(!$ret){
+      echo pg_last_error($db);
+      exit;
+   } 
 	var_dump(pg_fetch_all($userdb));
       echo "Name = ". $row[2] . "\n";
       echo "Comment =  ".$row[3] ."\n\n";
@@ -84,5 +92,8 @@ while($row = pg_fetch_row($ret)){
 <p>add new comment <input type="text" id="comment"/><input type="submit" onclick="newcomment()"/></p>
 </div>
 </span>
+<?php 
+pg_close($db);
+?>
 </body>
 </html>
