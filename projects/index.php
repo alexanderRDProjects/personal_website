@@ -1,3 +1,17 @@
+<?php
+$db = pg_connect("host=ec2-54-217-243-228.eu-west-1.compute.amazonaws.com dbname=d5rp8t24likiqk user=shozqbxwvyjkrp port=5432 password=5YW1EECQcJb5-9RGbr4gHX9_Pz");
+$sql =<<<EOF
+	select * from project;
+EOF;
+$ret = pg_query($db, $sql);
+   if(!$ret){
+      echo pg_last_error($db);
+      exit;
+   } 
+   //echo $ret;
+   //echo "Operation done successfully\n";
+   pg_close($db);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,6 +62,15 @@ function signOut() {
     background-color: rgba(238,238,238,0.5);
 ">
 <h1> Projects </h1>
+<p>
+<?php
+//var_dump(pg_fetch_all($ret));
+while($row = pg_fetch_row($ret)){
+      echo "Name = ". $row[2] . "\n";
+      echo "Comment =  ".$row[3] ."\n\n";
+   }
+?>
+</p>
 </div>
 </span>
 <div style='position:absolute;z-index:-15;left:0;top:0;width:100%;height:100%'>
