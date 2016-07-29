@@ -14,5 +14,5 @@ EOF;
    //echo $ret;
    //echo "Operation done successfully\n";
    pg_close($db);
-   echo pg_fetch_all($ret);
+   echo var_dump(pg_fetch_all($ret));
 ?>
