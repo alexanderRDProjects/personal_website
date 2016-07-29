@@ -76,9 +76,7 @@ comments
 while($row = pg_fetch_row($ret)){
 	
 	$sqli =<<<EOF
-	"SELECT 'name'
-	FROM userdetails
-	WHERE 'userid'= 1";
+	"SELECT * FROM userdetails WHERE 'userid'= 1";
 EOF;
 	$rete = pg_query($db, $sqli);
    if(!$rete){
