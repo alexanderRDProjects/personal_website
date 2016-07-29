@@ -66,7 +66,7 @@ function signOut() {
 <?php
 //var_dump(pg_fetch_all($ret));
 while($row = pg_fetch_row($ret)){
-      echo $row[2] . "	Tagged : ".$row[3] ."\n\n";
+      echo "<p>".$row[2] . "	Tagged : ".$row[3] ."</p>";
    }
 ?>
 </p>
