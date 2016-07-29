@@ -74,12 +74,10 @@ comments
 <?php
 //var_dump(pg_fetch_all($ret));
 while($row = pg_fetch_row($ret)){
+ 
+	$sqli = "select * from userdetails;"
 	
-	$sqli =<<<EOF
-	"SELECT *
-	FROM userdetails 
-	WHERE 'userid'= 1";
-EOF;
+	
 	$rete = pg_query($db, $sqli);
    if(!$rete){
       echo pg_last_error($db);
