@@ -75,7 +75,7 @@ comments
 //var_dump(pg_fetch_all($ret));
 while($row = pg_fetch_row($ret)){
  
-	$sqli = "select * from userdetails;"
+	$sqli = "select * from userdetails;";
 	
 	
 	$rete = pg_query($db, $sqli);
