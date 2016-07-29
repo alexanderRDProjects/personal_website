@@ -15,5 +15,5 @@ EOF;
    pg_close($db);
    //echo var_dump(pg_fetch_all($ret));
    //echo "<p>"."url: /".implode("-",explode(" ",pg_fetch_all($ret)[0]["name"]))."</p>";
-   header("Location: /projects/".implode("-",explode(" ",pg_fetch_all($ret)[0]["name"])));
+   header(strtolower("Location: /projects/".implode("-",explode(" ",pg_fetch_all($ret)[0]["name"]))));
 ?>
