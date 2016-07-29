@@ -15,5 +15,6 @@ EOF;
    //echo "Operation done successfully\n";
    pg_close($db);
    echo var_dump(pg_fetch_all($ret));
-   echo "<p>".pg_fetch_all($ret)[0]["name"]."</p>";
+   echo "<p>".implode("-",explode(" ",pg_fetch_all($ret)[0]["name"]))."</p>";
+   
 ?>
