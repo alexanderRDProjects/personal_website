@@ -84,7 +84,7 @@ while($row = pg_fetch_row($ret)){
       exit;
    } 
 	
-      echo "Name = ". pg_fetch_all($rete)[0]["name"]; . "\n";
+      echo "Name = ". pg_fetch_all($rete)[0]["name"] . "\n";
       echo "Comment =  ".$row[2] ."\n";
    }
 ?>
