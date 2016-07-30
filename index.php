@@ -19,6 +19,7 @@ function onSignIn(googleUser) {
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail());
+  alert("signed in ajax call here");
 }
 function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
