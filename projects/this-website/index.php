@@ -83,7 +83,7 @@ while($row = pg_fetch_row($ret)){
       echo pg_last_error($db);
       exit;
    } 
-	var_dump(pg_fetch_all($rete));
+	var_dump(pg_fetch_all($rete)[0]["name"]);
       echo "Name = ". $row[2] . "\n";
       echo "Comment =  ".$row[3] ."\n\n";
    }
