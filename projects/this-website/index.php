@@ -75,7 +75,7 @@ comments
 //var_dump(pg_fetch_all($ret));
 while($row = pg_fetch_row($ret)){
  
-	$sqli = "select * from userdetails;";
+	$sqli = "select * from userdetails where userid =".$row[1].";";
 	
 	
 	$rete = pg_query($db, $sqli);
@@ -84,7 +84,7 @@ while($row = pg_fetch_row($ret)){
       exit;
    } 
 	
-      echo "Name = ". pg_fetch_all($rete)[0]["name"] . "\n";
+      echo "Name = ". pg_fetch_all($rete)[0]["name"] . "\n ";
       echo "Comment =  ".$row[2] ."\n";
    }
 ?>
