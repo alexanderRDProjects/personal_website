@@ -16,5 +16,7 @@ if (pg_fetch_all($ret) != Array){
 	echo "sql:",$sqli,"sqlie";
 	$reti = pg_query($db,$sqli);
 	echo "success";
+} else {
+	echo "already here"'
 }
 ?>
