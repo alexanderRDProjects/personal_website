@@ -10,6 +10,7 @@ if(!$ret){
 } 
 echo "fetched :",var_dump(pg_fetch_all($ret)),";";
 if (var_dump(pg_fetch_all($ret)) == false){
+	//
 	// get user details
 	$sqli = "INSERT INTO userdetails(name,googleid) VALUES ('".$name."','".$googleID."');";
 	echo "sql:",$sqli,"sqlie";
