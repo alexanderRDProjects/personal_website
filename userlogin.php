@@ -8,10 +8,11 @@ if(!$ret){
 	echo pg_last_error($db);
 	exit;
 } 
+echo "fetched :",var_dump(pg_fetch_all($ret)),";";
 if (var_dump(pg_fetch_all($ret)) == false){
 	// get user details
 	$sqli = "INSERT INTO userdetails(name,googleid) VALUES ('".$name."','".$googleID."');";
-	echo $sqli;
+	echo "sql:",$sqli,"sqlie";
 	$reti = pg_query($db,$sqli);
 	echo "success";
 }
