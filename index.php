@@ -19,7 +19,7 @@ function onSignIn(googleUser) {
 	console.log('Name: ' + profile.getName());
 	console.log('Image URL: ' + profile.getImageUrl());
 	console.log('Email: ' + profile.getEmail());
-	alert("signed in ajax call here");
+	//alert("signed in ajax call here");
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.open("GET", "username.php?googleID=" +profile.getId()+"&Name="+profile.getId, true);
 	xmlhttp.send();
