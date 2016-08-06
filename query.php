@@ -6,7 +6,7 @@ $sql = "SELECT * from project";
       echo pg_last_error($db);
       exit;
    } 
-   echo "Operation done successfully\n";
+   echo "Operation done succes sfully\n";
    var_dump(pg_fetch_all($ret));
    pg_close($db); 
 ?>
