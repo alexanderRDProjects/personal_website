@@ -11,16 +11,20 @@ if(!$ret){
 echo "<p>fetched :",var_dump(pg_fetch_all($ret)),"ASDF;</p>";
 $found = false;
 foreach (pg_fetch_all($ret) as $val) {
+	if ($val["googleid"] == $googleID) {
+		$found = true;
+		echo "found";
+	}
 	echo "<p>".$val["googleid"]."</p>";
 };
-//if (var_dump(pg_fetch_all($ret)) == false){
+if ($found == false){
 	//
 	// get user details
-//	$sqli = "INSERT INTO userdetails(name,googleid) VALUES ('".$name."','".$googleID."');";
-//	echo "sql:",$sqli,"sqlie";
-//	$reti = pg_query($db,$sqli);
-//	echo "success";
-//} else {
-//	echo "already here";
-//}
+	$sqli = "INSERT INTO userdetails(name,googleid) VALUES ('".$name."','".$googleID."');";
+	echo "sql:",$sqli,"sqlie";
+	$reti = pg_query($db,$sqli);
+	echo "success";
+} else {
+	echo "already here";
+}
 ?>
