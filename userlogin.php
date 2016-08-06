@@ -9,10 +9,10 @@ if(!$ret){
 	exit;
 } 
 echo "fetched :",var_dump(pg_fetch_all($ret)),";";
-$found = false
+$found = false;
 foreach (pg_fetch_all($ret) as $val) {
 	var_dump($val);
-}  
+};
 //if (var_dump(pg_fetch_all($ret)) == false){
 	//
 	// get user details
