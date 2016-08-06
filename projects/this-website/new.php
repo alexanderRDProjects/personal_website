@@ -10,6 +10,7 @@ echo "<p>".$name." says ".$comment."</p>";
 echo "<p> finding userID </p>";
 echo var_dump(pg_fetch_all($res));
 $userid = pg_fetch_all($res)["userid"];
+echo "<p>userid is".$userid."</p>";
 $sql =<<<EOF
 	insert into usercomments (userID,Comment,ProjectId)
 	values ($userid,'$comment','website dev');
