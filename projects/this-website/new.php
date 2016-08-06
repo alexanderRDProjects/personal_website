@@ -34,5 +34,5 @@ EOF;
    //echo "Operation done successfully\n";
    var_dump(pg_fetch_all($ret));
    pg_close($db); 
-   header("location = /projects/this-website/")
+   header("Location:  /projects/this-website/")
 ?>
