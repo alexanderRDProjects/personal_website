@@ -13,13 +13,16 @@ $db = pg_connect("host=ec2-54-217-243-228.eu-west-1.compute.amazonaws.com dbname
 <script>
 var SignedIn = false
 function onSignIn(googleUser) {
-  var profile = googleUser.getBasicProfile();
-  SignedIn = true;
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + profile.getName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail());
-  alert("signed in ajax call here");
+	var profile = googleUser.getBasicProfile();
+	SignedIn = true;
+	console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+	console.log('Name: ' + profile.getName());
+	console.log('Image URL: ' + profile.getImageUrl());
+	console.log('Email: ' + profile.getEmail());
+	alert("signed in ajax call here");
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", "username.php?googleID=" +profile.getId()+"&Name="+profile.getId, true);
+	xmlhttp.send();
 }
 function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();

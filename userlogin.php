@@ -5,26 +5,26 @@ $db = pg_connect("host=ec2-54-217-243-228.eu-west-1.compute.amazonaws.com dbname
 $sql = "SELECT GoogleID FROM userdetails WHERE GoogleID = '".$googleID."';";
 $ret = pg_query($db, $sql);
 if(!$ret){
-	echo pg_last_error($db);
+	//echo pg_last_error($db);
 	exit;
 } 
-echo "<p>fetched :",var_dump(pg_fetch_all($ret)),"ASDF;</p>";
+//echo "<p>fetched :",var_dump(pg_fetch_all($ret)),"ASDF;</p>";
 $found = false;
 foreach (pg_fetch_all($ret) as $val) {
 	if ($val["googleid"] == $googleID) {
 		$found = true;
-		echo "found";
+		//echo "found";
 	}
-	echo "<p>".$val["googleid"]."</p>";
+	//echo "<p>".$val["googleid"]."</p>";
 };
 if ($found == false){
 	//
 	// get user details
 	$sqli = "INSERT INTO userdetails(name,googleid) VALUES ('".$name."','".$googleID."');";
-	echo "sql:",$sqli,"sqlie";
+	//echo "sql:",$sqli,"sqlie";
 	$reti = pg_query($db,$sqli);
-	echo "success";
+	//echo "success";
 } else {
-	echo "already here";
+	//echo "already here";
 }
 ?>
