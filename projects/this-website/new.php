@@ -12,7 +12,7 @@ echo var_dump(pg_fetch_all($res));
 $userid = pg_fetch_all($res)[0]["userid"];
 echo "<p>userid is".$userid."</p>";
 //project id
-$pquery = "select projectid from projects where ProjectName = 'website dev'";
+$pquery = "select projectid from project where name = 'This Website'";
 $pres = pg_query($db,$pquery);
 
 echo "<p>".$name." says ".$comment."</p>";
