@@ -41,7 +41,7 @@ function signOut() {
     });
   };
 function newcomment () {
-	 window.location = "/projects/this/new.php?name="+Name+"&comment="+document.getElementById("comment").value;
+	 window.location = "/projects/this-website/new.php?name="+Name+"&comment="+document.getElementById("comment").value;
  };
 </script>
 <meta name="google-signin-client_id" content="434726568124-obcv7f1fmpqse2gard1nh55513av5vff.apps.googleusercontent.com">
