@@ -11,7 +11,7 @@ echo "<p> finding userID </p>";
 echo var_dump(pg_fetch_all($res));
 $userid = pg_fetch_all($res)["userid"];
 $sql =<<<EOF
-	insert into usercomments (userID,Comment,ProjectName)
+	insert into usercomments (userID,Comment,ProjectId)
 	values ('$userid','$comment','website dev');
 EOF;
 
