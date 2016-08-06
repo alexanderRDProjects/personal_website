@@ -8,10 +8,10 @@ if(!$ret){
 	echo pg_last_error($db);
 	exit;
 } 
-echo "fetched :",var_dump(pg_fetch_all($ret)),"ASDF;";
+echo "<p>fetched :",var_dump(pg_fetch_all($ret)),"ASDF;</p>";
 $found = false;
 foreach (pg_fetch_all($ret) as $val) {
-	var_dump($val);
+	echo "<p>".var_dump($val)."</p>";
 };
 //if (var_dump(pg_fetch_all($ret)) == false){
 	//
