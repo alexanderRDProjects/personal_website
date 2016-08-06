@@ -11,7 +11,7 @@ if(!$ret){
 echo "<p>fetched :",var_dump(pg_fetch_all($ret)),"ASDF;</p>";
 $found = false;
 foreach (pg_fetch_all($ret) as $val) {
-	echo "<p>".var_dump($val) ["googleid"]."</p>";
+	echo "<p>".$val["googleid"]."</p>";
 };
 //if (var_dump(pg_fetch_all($ret)) == false){
 	//
