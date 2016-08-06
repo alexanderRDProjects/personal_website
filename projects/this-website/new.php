@@ -10,7 +10,7 @@ $query = "select userID from userdetails where name = '$name'";
 $res = pg_query($db,$query);
 echo var_dump(pg_fetch_all($res);
 echo "<p>".$name." says ".$comment."</p>";
-echo "<p> finding userID </p>"
+echo "<p> finding userID </p>";
 
 
 

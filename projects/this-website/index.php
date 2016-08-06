@@ -67,7 +67,7 @@ function newcomment () {
 </nav>
 <div class="jumbotron text-center">
 <h1> This Website </h1>
-<p>This website is written using bootstrap for the front end and php for the back end.Its purpose is to show the projects that i am working on and projects that i have completed there will be github repositrys in the decription of each project as all the projects i currently release are open source. i would like the website to show the porject allow poeple to comment on the projects asing for features or showing support or guidance although i think this website will not be a wide accessed website though it might get a DOS attack. finally it will provide interesting project for other people to work on wiht the guidance of the github solution that i will be developing</p>
+<p>This website is written using bootstrap for the front end and php for the back end. Its purpose is to show the projects that I am working on and projects that I have completed there will be github repositories in the description of each project as all the projects I currently release are open source. I would like the website to show the project allow people to comment on the projects asking for features or showing support or guidance although I think this website will not be a wide accessed website though it might get a DOS attack. finally, it will provide interesting project for other people to work on with the guidance of the github solution that I will be developing </p>
 <h2>
 comments
 </h2>
