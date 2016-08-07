@@ -85,7 +85,7 @@ while($row = pg_fetch_row($ret)){
       exit;
    } 
 	
-      echo "<p><strong>". pg_fetch_all($rete)[0]["name"] . "</strong></p>";
+      echo '<p style="margin-bottom: 0px;"><strong>'. pg_fetch_all($rete)[0]["name"] . "</strong></p>";
       echo "<p>".$row[2] ."</p>";
    }
 ?>
