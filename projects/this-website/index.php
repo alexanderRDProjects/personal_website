@@ -91,8 +91,12 @@ while($row = pg_fetch_row($ret)){
       exit;
    } 
 	
-      echo '<div class = "well-sm"> <p style="margin-bottom: 0px;"><strong style="font-size: 16px;
-">'. pg_fetch_all($rete)[0]["name"] . "</strong></p>";
+      echo '<div class="well-sm" style="
+    padding-bottom: 0px;
+"> <p style="margin-bottom: 0px;"><strong style="font-size: 16px;
+">'. pg_fetch_all($rete)[0]["name"] . "</strong></p><p style="
+    margin-bottom: 0px;
+">";
       echo "<p>".$row[2] ."</p> \n </div> \n";
    }
 ?>
