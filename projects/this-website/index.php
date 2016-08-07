@@ -97,7 +97,10 @@ while($row = pg_fetch_row($ret)){
 ">'. pg_fetch_all($rete)[0]["name"] . '</strong></p><p style="
     margin-bottom: 0px;
 ">';
-      echo "<p>".$row[2] ."</p> \n </div> \n";
+      echo '<p style="
+    font-size: 14px;
+    margin-left: 30px;
+">'.$row[2] ."</p> \n </div> \n";
    }
 ?>
 </p>
