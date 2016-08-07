@@ -68,6 +68,7 @@ function newcomment () {
 <div class="jumbotron text-center">
 <h1> This Website </h1>
 <p>This website is written using bootstrap for the front end and php for the back end. Its purpose is to show the projects that I am working on and projects that I have completed there will be github repositories in the description of each project as all the projects I currently release are open source. I would like the website to show the project allow people to comment on the projects asking for features or showing support or guidance although I think this website will not be a wide accessed website though it might get a DOS attack. finally, it will provide interesting project for other people to work on with the guidance of the github solution that I will be developing </p>
+</div>
 <h2>
 comments
 </h2>
@@ -91,7 +92,7 @@ while($row = pg_fetch_row($ret)){
 ?>
 </p>
 <p>add new comment <input type="text" id="comment"/><input type="submit" onclick="newcomment()"/></p>
-</div>
+
 </span>
 <?php 
 pg_close($db);
