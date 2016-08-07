@@ -69,8 +69,8 @@ function newcomment () {
 <h1> This Website </h1>
 <p>This website is written using bootstrap for the front end and php for the back end. Its purpose is to show the projects that I am working on and projects that I have completed there will be github repositories in the description of each project as all the projects I currently release are open source. I would like the website to show the project allow people to comment on the projects asking for features or showing support or guidance although I think this website will not be a wide accessed website though it might get a DOS attack. finally, it will provide interesting project for other people to work on with the guidance of the github solution that I will be developing </p>
 </div>
-<div class = "jumbotron">
-<h2>
+<div class="jumbotron" style="padding-top: 24px;">
+<h2 style="text-align: center;">
 comments
 </h2>
 <p>
@@ -87,8 +87,8 @@ while($row = pg_fetch_row($ret)){
       exit;
    } 
 	
-      echo '<p style="margin-bottom: 0px;"><strong>'. pg_fetch_all($rete)[0]["name"] . "</strong></p>";
-      echo "<p>".$row[2] ."</p>";
+      echo '<div class = "well-sm"><p style="margin-bottom: 0px;"><strong>'. pg_fetch_all($rete)[0]["name"] . "</strong></p>";
+      echo "<p>".$row[2] ."</p></div>";
    }
 ?>
 </p>
