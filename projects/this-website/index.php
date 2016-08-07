@@ -72,7 +72,6 @@ function newcomment () {
 comments
 </h2>
 <p>
-<table>
 <?php
 //var_dump(pg_fetch_all($ret));
 while($row = pg_fetch_row($ret)){
@@ -86,11 +85,10 @@ while($row = pg_fetch_row($ret)){
       exit;
    } 
 	
-      echo "<tr><td>Name = ". pg_fetch_all($rete)[0]["name"] . "</td> ";
-      echo "<td>Comment =  ".$row[2] ."</td></tr>";
+      echo "<p><strong>". pg_fetch_all($rete)[0]["name"] . "</strong></p>";
+      echo "<p>".$row[2] ."</p>";
    }
 ?>
-</table>
 </p>
 <p>add new comment <input type="text" id="comment"/><input type="submit" onclick="newcomment()"/></p>
 </div>
