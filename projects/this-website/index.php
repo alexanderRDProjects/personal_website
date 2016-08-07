@@ -46,7 +46,9 @@ function newcomment () {
 </script>
 <meta name="google-signin-client_id" content="434726568124-obcv7f1fmpqse2gard1nh55513av5vff.apps.googleusercontent.com">
 </head>
-<body>
+<body style="
+    background-image: url(http://alexander-rd.herokuapp.com/projects/This-Website/background.jpg);
+">
 <span class = "container-fluid">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -96,9 +98,6 @@ while($row = pg_fetch_row($ret)){
 <p>add new comment <input type="text" id="comment"/><input type="submit" onclick="newcomment()"/></p>
 </div>
 </span>
-<div style='position:absolute;z-index:-15;left:0;top:0;width:100%;height:100%'>
-  <img src='http://alexander-rd.herokuapp.com/projects/This-Website/background.jpg' style='width:100%;height:100%' alt='[]' />
-</div>
 <?php 
 pg_close($db);
 ?>
