@@ -21,7 +21,7 @@ function onSignIn(googleUser) {
 	console.log('Email: ' + profile.getEmail());
 	//alert("signed in ajax call here");
 	var xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("GET", "username.php?googleID=" +profile.getId()+"&Name="+profile.getId, true);
+	xmlhttp.open("GET", "userlogin.php?googleID=" +profile.getId()+"&Name="+profile.getId, true);
 	xmlhttp.send();
 }
 function signOut() {
