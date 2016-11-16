@@ -24,7 +24,8 @@ if ($found == false){
 	//
 	// get user details
 	$sqli = "INSERT INTO userdetails(name,googleid,url) VALUES ('".$name."','".$googleID.",".$url."');";
-	//echo "sql:",$sqli,"sqlie";
+	echo "sql:".$sqli."sqlie";
+
 	$reti = pg_query($db,$sqli);
 	echo "success";
 } else {
