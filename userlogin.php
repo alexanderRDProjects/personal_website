@@ -23,7 +23,7 @@ foreach (pg_fetch_all($ret) as $val) {
 if ($found == false){
 	//
 	// get user details
-	$sqli = "INSERT INTO userdetails(name,googleid,url) VALUES ('".$name."','".$googleID.",".$url."');";
+	$sqli = "INSERT INTO userdetails(name,googleid,url) VALUES ('".$name."','".$googleID."','".$url."'');";
 	echo "sql:".$sqli."sqlie";
 
 	$reti = pg_query($db,$sqli);
