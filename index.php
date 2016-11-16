@@ -21,8 +21,10 @@ function onSignIn(googleUser) {
 	console.log('Email: ' + profile.getEmail());
 	//alert("signed in ajax call here");
 	var xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("GET", "userlogin.php?googleID=" +profile.getId()+"&Name="+profile.getId, true);
+	
+	xmlhttp.open("GET", "userlogin.php?googleID=" +profile.getId()+"&Name="+profile.getName()+"&url="+profile.getImageUrl(), true);
 	xmlhttp.send();
+	console.log("login_request sent");
 }
 function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
