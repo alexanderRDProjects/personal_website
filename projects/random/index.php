@@ -1,4 +1,5 @@
 <?php
+header("X-Robots-Tag: noindex");
 //echo "this will redirect you to a random project in the mean time take this link to the projects to decided for your self <a href="/projects/"> link </a>"
 $db = pg_connect("host=ec2-54-217-243-228.eu-west-1.compute.amazonaws.com dbname=d5rp8t24likiqk user=shozqbxwvyjkrp port=5432 password=5YW1EECQcJb5-9RGbr4gHX9_Pz");
 $sql =<<<EOF
