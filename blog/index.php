@@ -67,7 +67,7 @@ function signOut() {
 <h1> Blog </h1>
 <p>
 <?php
-echo var_dump(pg_fetch_all($ret));
+//echo var_dump(pg_fetch_all($ret));
 foreach (pg_fetch_all($ret) as &$blogpost) 
 {
 	echo "<p>".str_replace("#"," ",$blogpost["createtime"])."</p>";
