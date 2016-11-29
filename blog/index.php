@@ -65,7 +65,11 @@ function signOut() {
     background-color: rgba(238,238,238,0.5);
 ">
 <h1> Blog </h1>
-<p>short_description<p>
+<p>
+<?php
+echo pg_fetch_all($ret);
+?>
+<p>
 </div>
 </span>
 <div style='position:absolute;z-index:-15;left:0;top:0;width:100%;height:100%'>
