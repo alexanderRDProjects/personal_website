@@ -68,6 +68,11 @@ function signOut() {
 <p>
 <?php
 echo var_dump(pg_fetch_all($ret));
+foreach (pg_fetch_all($ret) as &$blogpost) 
+{
+	echo "<p>".str_replace("#"," ",$blogpost["createtime"])."</p>";
+	echo "<p>".$blogpost["blogcontent"]."</p>";
+}
 ?>
 <p>
 </div>
