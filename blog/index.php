@@ -9,7 +9,7 @@ EOF;
       echo pg_last_error($db);
       exit;
    } 
-   echo $ret;
+   //echo $ret;
    //echo "Operation done successfully\n";
    
 ?>
@@ -67,7 +67,7 @@ function signOut() {
 <h1> Blog </h1>
 <p>
 <?php
-echo pg_fetch_all($ret);
+echo var_dump(pg_fetch_all($ret));
 ?>
 <p>
 </div>
