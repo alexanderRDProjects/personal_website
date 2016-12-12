@@ -59,8 +59,7 @@ function signOut() {
 	I enjoy web design as a main area of computing mainly specialising in PHP 
 	(which this website is built in) but enjoy other aspects of computer science,
 	such as building a primitive engine of programming language (in a lexical then syntax analysis method).
-	However, I sometimes delve into hardware programming building a robot for PiWars 2015 in a group which my school friends in Year 13.
-	
+	However, I sometimes delve into hardware programming for example I collaborated with some of my friends in Year 13 and we built a robot for PiWars 2015.
 	</p>
 	</div>
 	<div class="col-sm-2">
