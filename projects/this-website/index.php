@@ -130,8 +130,8 @@ function onSignIn(googleUser) {
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail());
-  document.getElementById("#submitbutton").setAttribute("onclick", "newcomment()");
-  document.getElementById("#submitbutton").setAttribute("placeholder", "enter your comment here");
+  document.getElementById("submitbutton").setAttribute("onclick", "newcomment()");
+  document.getElementById("submitbutton").setAttribute("placeholder", "enter your comment here");
 };
 function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
@@ -143,10 +143,10 @@ function newcomment () {
 	 window.location = "/projects/this-website/new.php?name="+Name+"&comment="+document.getElementById("comment").value;
  };
 if (SignedIn == false){
-	document.getElementById("#submitbutton").setAttribute("placeholder", "sign in to comment");
+	document.getElementById("submitbutton").setAttribute("placeholder", "sign in to comment");
 } else
-	document.getElementById("#submitbutton").setAttribute("placeholder", "enter your comment here");
-	document.getElementById("#submitbutton").setAttribute("onclick", "newcomment()");
+	document.getElementById("submitbutton").setAttribute("placeholder", "enter your comment here");
+	document.getElementById("submitbutton").setAttribute("onclick", "newcomment()");
 	
 </script>
 </body>
