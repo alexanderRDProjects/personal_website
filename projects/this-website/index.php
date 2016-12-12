@@ -78,6 +78,7 @@ function newcomment () {
 comments
 </h2>
 <p>
+<table>
 <?php
 // this is the extraction and formating of the user comments
 
@@ -107,7 +108,7 @@ foreach ($comment_results as &$comment_result)
 	{
 		if ($user_result["userid"] == $comment_result["userid"])
 		{
-			array_push($comment,$user_result["userid"],$user_result["url"]);
+			array_push($comment,$user_result["name"],$user_result["url"]);
 		}
 		
 		
@@ -115,9 +116,15 @@ foreach ($comment_results as &$comment_result)
 	array_push($comment,$comment_result["comment"]);
 	array_push($comments,$comment);
 }
-var_dump($comments)
- 
+//var_dump($comments);
+// then comments need to be formatted
+foreach ($comments as &$comment)
+{
+	echo "<tr><td>".$comment[0]."</td></tr>";
+	echo "<tr><td><img href='".$comment[1]."'/></td><td>".$comment[2]."</td></tr>";
+}
 ?>
+</table>
 </p>
 
 
