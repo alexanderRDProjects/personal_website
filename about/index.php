@@ -53,7 +53,15 @@ function signOut() {
 <div class="row">
     <div class="col-sm-4"><br></div>
     <div class="col-sm-4">
-	<p>descritpion of me and the stuff i am doing and other stuff like that</p>
+	<p>
+	I am a computer science enthusiast how enjoys working of software project. 
+	I am a maths undergraduate currently in the first year of a mathematics degree. 
+	I enjoy web design as a main area of computing mainly specialising in PHP 
+	(which this website is built in) but enjoy other aspects of computer science,
+	such as building a primitive engine of programming language (in a lexical then syntax analysis method).
+	However, I sometimes delve into hardware programming building a robot for PiWars 2015 in a group which my school friends in Year 13.
+	
+	</p>
 	</div>
 	<div class="col-sm-2">
 	<img src="me.png" style="
