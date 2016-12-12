@@ -120,7 +120,7 @@ foreach ($comment_results as &$comment_result)
 // then comments need to be formatted
 foreach ($comments as &$comment)
 {
-	echo "<tr><td>".$comment[0]."</td></tr>";
+	echo "<tr><td>".str_replace("%20"," ",$comment[0])."</td></tr>";
 	echo "<tr><td><img src='".$comment[1]."'/></td><td>".$comment[2]."</td></tr>";
 }
 ?>
