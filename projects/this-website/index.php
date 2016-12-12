@@ -94,9 +94,7 @@ while($row = pg_fetch_row($ret)){
       echo '<div class="well-sm" style="
     padding-bottom: 0px;
 "> <p style="margin-bottom: 0px;"><strong style="font-size: 16px;
-"><img href="'.pg_fetch_all($rete)[0]["url"]).'"/>'. pg_fetch_all($rete)[0]["name"] . '</strong></p><p style="
-    margin-bottom: 0px;
-">';
+"><img href="'.pg_fetch_all($rete)[0]["url"]).'"/>'. pg_fetch_all($rete)[0]["name"] . '</strong></p><p style="margin-bottom: 0px;">';
       echo '<p style="
     font-size: 14px;
     margin-left: 30px;
