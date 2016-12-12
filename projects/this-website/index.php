@@ -102,7 +102,7 @@ $comments = [];
 $comment = [];
 foreach ($comment_results as &$comment_result)
 {
-	$comment= []
+	$comment= [];
 	foreach($user_results as &$user_result)
 	{
 		if $user_result["userid"] == $comment_result["userid"]
