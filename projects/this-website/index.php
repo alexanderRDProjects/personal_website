@@ -79,29 +79,35 @@ comments
 </h2>
 <p>
 <?php
-//var_dump(pg_fetch_all($ret));
-while($row = pg_fetch_row($ret)){
- 
-	$sqli = "select * from userdetails where userid =".$row[1].";";
-	
-	
-	$rete = pg_query($db, $sqli);
-   if(!$rete){
+// this is the extraction and formating of the user comments
+
+// first each of the comments omust be extracted
+$commentsql ="SELECT userid,comment FROM usercomments WHERE itemid = '1'; ";
+$comment_results = pg_query($db, $commentsql);
+   if(!$comment_results){
       echo pg_last_error($db);
       exit;
-   } 
-	
-      echo '<div class="well-sm" style="
-    padding-bottom: 0px;
-"> <p style="margin-bottom: 0px;"><strong style="font-size: 16px;
-"><img href="'.pg_fetch_all($rete)[0]["url"].'"/>'. pg_fetch_all($rete)[0]["name"] . '</strong></p><p style="margin-bottom: 0px;">';
-      echo '<p style="
-    font-size: 14px;
-    margin-left: 30px;
-">'.$row[2] ."</p> \n </div> \n";
    }
+var_dump($comment_results);
+//then extract the userdetails so we can see who make each comment
+$usersql = "SELECT * FROM userdetails";
+$user_results = pg_query($db,$usersql);
+   if(!$comment_results){
+      echo pg_last_error($db);
+      exit;
+   }
+var_dump($user_results);
+//then matching them up into a multi dimension array and echo
+$comments = [];
+$comment = [];
+
+ 
 ?>
+
+
 </p>
+
+
 <p>add new comment <input type="text" id="comment"/><input type="submit" onclick="newcomment()"/></p>
 </div>
 </span>
