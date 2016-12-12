@@ -83,7 +83,7 @@ comments
 
 // first each of the comments omust be extracted
 $commentsql ="SELECT userid,comment FROM usercomments WHERE itemid = '1'; ";
-$comment_results = pg_query($db, $commentsql);
+$comment_results = pg_fetch_all(pg_query($db, $commentsql));
    if(!$comment_results){
       echo pg_last_error($db);
       exit;
@@ -91,7 +91,7 @@ $comment_results = pg_query($db, $commentsql);
 var_dump($comment_results);
 //then extract the userdetails so we can see who make each comment
 $usersql = "SELECT * FROM userdetails";
-$user_results = pg_query($db,$usersql);
+$user_results = pg_fetch_all(pg_query($db,$usersql));
    if(!$comment_results){
       echo pg_last_error($db);
       exit;
