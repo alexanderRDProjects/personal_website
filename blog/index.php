@@ -67,11 +67,18 @@ function signOut() {
 <h1> Blog </h1>
 <p>
 <?php
+// BUG blogs posts were appearing in the wroung order
+// FIX append posts to a array then reverse array then echo
 //echo var_dump(pg_fetch_all($ret));
+$blogposts = [];
 foreach (pg_fetch_all($ret) as &$blogpost) 
 {
-	echo "<p>".str_replace("#"," ",$blogpost["createtime"])."</p>";
-	echo "<p>".$blogpost["blogcontent"]."</p>";
+	array_push($blogposts,"<p>".str_replace("#"," ",$blogpost["createtime"])."</p>","<p>".$blogpost["blogcontent"]."</p>"); 
+}
+$blogposts = array_reverse($blogposts)
+foreach ($blogposts as &$blogpost)
+{
+	echo $blogpost;
 }
 ?>
 <p>
