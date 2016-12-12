@@ -121,7 +121,7 @@ foreach ($comment_results as &$comment_result)
 foreach ($comments as &$comment)
 {
 	echo "<tr><td>".$comment[0]."</td></tr>";
-	echo "<tr><td><img href='".$comment[1]."'/></td><td>".$comment[2]."</td></tr>";
+	echo "<tr><td><img src='".$comment[1]."'/></td><td>".$comment[2]."</td></tr>";
 }
 ?>
 </table>
