@@ -88,7 +88,7 @@ $comment_results = pg_fetch_all(pg_query($db, $commentsql));
       echo pg_last_error($db);
       exit;
    }
-var_dump($comment_results);
+//var_dump($comment_results);
 //then extract the userdetails so we can see who make each comment
 $usersql = "SELECT * FROM userdetails";
 $user_results = pg_fetch_all(pg_query($db,$usersql));
@@ -96,15 +96,28 @@ $user_results = pg_fetch_all(pg_query($db,$usersql));
       echo pg_last_error($db);
       exit;
    }
-var_dump($user_results);
+//var_dump($user_results);
 //then matching them up into a multi dimension array and echo
 $comments = [];
 $comment = [];
-
+foreach ($comment_results as &$comment_result)
+{
+	$comment= []
+	foreach($user_results as &$user_result)
+	{
+		if $user_result["userid"] == $comment_result["userid"]
+		{
+			array_push($comment,$user_result["userid"],$user_result["url"]);
+		}
+		
+		
+	}
+	array_push($comment,$comment_result["comment"]);
+	array_push($comments,$comment);
+}
+var_dump($comments)
  
 ?>
-
-
 </p>
 
 
