@@ -105,7 +105,7 @@ foreach ($comment_results as &$comment_result)
 	$comment= [];
 	foreach($user_results as &$user_result)
 	{
-		if $user_result["userid"] == $comment_result["userid"]
+		if ($user_result["userid"] == $comment_result["userid"])
 		{
 			array_push($comment,$user_result["userid"],$user_result["url"]);
 		}
