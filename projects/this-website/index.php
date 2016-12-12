@@ -122,7 +122,7 @@ foreach ($comments as &$comment)
 {
 	echo "<tr><td><br></td></tr>";
 	echo "<tr><td><img src='".$comment[1]."'/></td>";
-	echo "<table><tr><td>".str_replace("%20"," ",$comment[0])."</td></tr>"
+	echo "<table><tr><td>".str_replace("%20"," ",$comment[0])."</td></tr>";
 	echo "<tr><td>".$comment[2]."</td></tr></table></tr>";
 	//echo "<tr><td>".str_replace("%20"," ",$comment[0])."</td>";
 	//echo "<tr><td><img src='".$comment[1]."'/></td><td>".$comment[2]."</td></tr>";
