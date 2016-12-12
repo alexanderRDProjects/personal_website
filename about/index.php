@@ -51,8 +51,8 @@ function signOut() {
 ">
 <h1> About </h1>
 <div class="row">
-    <div class="col-sm-4"><br></div>
-    <div class="col-sm-4">
+    <div class="col-sm-2"><br></div>
+    <div class="col-sm-6">
 	<p>
 	I am a computer science enthusiast how enjoys working of software project. 
 	I am a maths undergraduate currently in the first year of a mathematics degree. 
