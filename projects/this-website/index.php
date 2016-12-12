@@ -22,28 +22,6 @@ EOF;
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script>
-var SignedIn = false
-var Name = "None"
-function onSignIn(googleUser) {
-  var profile = googleUser.getBasicProfile();
-  SignedIn = true;
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  Name = profile.getName();
-  console.log('Name: ' + profile.getName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail());
-};
-function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-    });
-  };
-function newcomment () {
-	 window.location = "/projects/this-website/new.php?name="+Name+"&comment="+document.getElementById("comment").value;
- };
-</script>
 <meta name="google-signin-client_id" content="434726568124-obcv7f1fmpqse2gard1nh55513av5vff.apps.googleusercontent.com">
 </head>
 <body style="
@@ -132,12 +110,44 @@ foreach ($comments as &$comment)
 </table>
 </p>
 
-
-<p>add new comment <input type="text" id="comment"/><input type="submit" onclick="newcomment()"/></p>
+<p style="
+    align-content: center;
+    text-align: center;
+">add new comment <input type="text" id="comment"><input id="submitbutton" type="submit"></p>
 </div>
 </span>
 <?php 
 pg_close($db);
 ?>
+<script>
+var SignedIn = false
+var Name = "None"
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  SignedIn = true;
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  Name = profile.getName();
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail());
+  document.getElementById("#submitbutton").setAttribute("onclick", "newcomment()");
+  document.getElementById("#submitbutton").setAttribute("placeholder", "enter your comment here");
+};
+function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  };
+function newcomment () {
+	 window.location = "/projects/this-website/new.php?name="+Name+"&comment="+document.getElementById("comment").value;
+ };
+if (SignedIn == false){
+	document.getElementById("#submitbutton").setAttribute("placeholder", "sign in to comment");
+} else
+	document.getElementById("#submitbutton").setAttribute("placeholder", "enter your comment here");
+	document.getElementById("#submitbutton").setAttribute("onclick", "newcomment()");
+	
+</script>
 </body>
 </html>
