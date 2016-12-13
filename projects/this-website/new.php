@@ -1,10 +1,10 @@
 <?php
-$name = $_GET["name"];
+$name = str_replace(" ","%20",$_GET["name"]);
 echo $name;
 $comment = $_GET["comment"];
 $db = pg_connect("host=ec2-54-217-243-228.eu-west-1.compute.amazonaws.com dbname=d5rp8t24likiqk user=shozqbxwvyjkrp port=5432 password=5YW1EECQcJb5-9RGbr4gHX9_Pz");
 //userid
-$query = "select userID from userdetails where name = '$name'";
+$query = "select userID from userdetails where name = '$name';";
 $res = pg_query($db,$query);
 
 //echo "<p>".$name." says ".$comment."</p>";
@@ -13,7 +13,7 @@ $res = pg_query($db,$query);
 $userid = pg_fetch_all($res)[0]["userid"];
 //echo "<p>userid is".$userid."</p>";
 //project id
-$pquery = "select itemid from project where name = 'This Website'";
+$pquery = "select itemid from project where name = 'This Website';";
 $pres = pg_query($db,$pquery);
 
 //echo "<p>".$name." says ".$comment."</p>";
