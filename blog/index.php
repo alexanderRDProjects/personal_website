@@ -73,7 +73,7 @@ function signOut() {
 $blogposts = [];
 foreach (pg_fetch_all($ret) as &$blogpost) 
 {
-	array_push($blogposts,"<p>".str_replace("#"," ",$blogpost["createtime"])."</p>","<p>".$blogpost["blogcontent"]."</p>"); 
+	array_push($blogposts,"<p>".$blogpost["blogcontent"]."</p>","<p>".str_replace("#"," ",$blogpost["createtime"])."</p>"); 
 }
 $blogposts = array_reverse($blogposts);
 foreach ($blogposts as &$blogpost)
