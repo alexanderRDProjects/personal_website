@@ -19,7 +19,7 @@ $pres = pg_query($db,$pquery);
 //echo "<p>".$name." says ".$comment."</p>";
 //echo "<p> finding projectID </p>";
 //echo var_dump(pg_fetch_all($pres));
-$projectid = pg_fetch_all($pres)[0]["projectid"];
+$projectid = pg_fetch_all($pres)[0]["itemid"];
 echo "<p></p><p>".$projectid."</p>";
 //echo "<p>projectid is".$projectid."</p>";
 $sql =<<<EOF
