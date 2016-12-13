@@ -23,7 +23,7 @@ $projectid = pg_fetch_all($pres)[0]["itemid"];
 echo "<p></p><p>".$projectid."</p>";
 //echo "<p>projectid is".$projectid."</p>";
 $sql =<<<EOF
-	insert into usercomments (userID,Comment,ProjectId)
+	insert into usercomments (userID,Comment,itemid)
 	values ($userid,'$comment',$projectid);
 EOF;
 
