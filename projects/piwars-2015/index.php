@@ -73,7 +73,7 @@ $usersql = "SELECT * FROM userdetails";
 $user_results = pg_fetch_all(pg_query($db,$usersql));
    if(!$comment_results){
       echo pg_last_error($db);
-      exit;
+      //exit;
    }
 //var_dump($user_results);
 //then matching them up into a multi dimension array and echo

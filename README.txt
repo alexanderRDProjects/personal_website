@@ -15,7 +15,9 @@ Using PHP include() to reduce repeated code. this will allows each each script t
 
 Front end:
 
-the comment system looks terrible. complete reworked needed. in addition the comments does not support the google avatar even though backend supports it.
+[partly complete]the comment system looks terrible. [complete]complete reworked needed. [complete]in addition the comments does not support the google avatar even though backend supports it.
 the blog system should be unique the rest of the pages at the moment it just looks like a project page of a project called blog. pessimisun over.
 
 centralizing the nagivation bar to adapt the larger google signin button would be a nice.
+
+making the background and static would help the website be more professional
