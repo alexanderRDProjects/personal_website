@@ -13,7 +13,7 @@ $res = pg_query($db,$query);
 $userid = pg_fetch_all($res)[0]["userid"];
 //echo "<p>userid is".$userid."</p>";
 //project id
-$pquery = "select projectid from project where name = 'This Website'";
+$pquery = "select itemid from project where name = 'This Website'";
 $pres = pg_query($db,$pquery);
 
 //echo "<p>".$name." says ".$comment."</p>";
