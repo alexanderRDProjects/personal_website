@@ -1,12 +1,17 @@
 <html>
 <head>
 <title>SLtex Converter</title>
+<style>
+textarea {
+    width: 100%;
+}
+</style>
 </head>
 <body>
 <center>
 <table width = 100%>
 <tr width = 100%>
-<td>
+<td width = 100%>
 <center><h1>SLTex LaTex Converter</h1></center>
 </td>
 </tr>
