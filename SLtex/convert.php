@@ -1,7 +1,7 @@
 <?php
 $content = urldecode($_GET["contents"]);
 $output = [];
-var_dump(array_filter(explode("\n",$content)));
+$input = array_filter(explode("\n",$content));
 foreach($input as &$line) {
 	echo "<p> unformatted line :"+$line+"</p>";
 	$line = str_replace("pi","\pi",$line);
