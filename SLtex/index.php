@@ -3,7 +3,7 @@
 <title>SLtex Converter</title>
 <style>
 textarea {
-    width: 100%;
+    width: 50%;
 }
 </style>
 </head>
