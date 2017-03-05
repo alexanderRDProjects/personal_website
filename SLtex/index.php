@@ -1,11 +1,6 @@
 <html>
 <head>
 <title>SLtex Converter</title>
-<style>
-textarea {
-    width: 50%;
-}
-</style>
 </head>
 <body>
 <center>
@@ -20,14 +15,14 @@ textarea {
 <td width = 50%> LaTex </td>
 </tr>
 <tr>
-<td width = 50%>
-<textarea id = "SLText">
+<td>
+<textarea width = 400px height = 100px id = "SLText">
 Enter Your SLTex here ...
 </textarea>
 </td>
-<td width = 50%>
-<textarea id = "LaText">
-Enter Your SLTex here ...
+<td>
+<textarea  width = 400px height = 100px id = "LaText">
+Enter Your LaTeX here ...
 </textarea>
 </td>
 </tr>
