@@ -7,7 +7,7 @@ header('Content-Disposition: attachment; filename="'.basename($x).'"');
 header('Expires: 0');
 header('Cache-Control: must-revalidate');
 header('Pragma: public');
-header('Content-Length: ' . strlen($x));
+header('Content-Length: ' . (string)strlen($x));
 echo $x;
 exit;
 ?>
