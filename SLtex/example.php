@@ -1,5 +1,5 @@
 <?php
-$file = 'monkey.gif';
+$file = 'example.tex';
 
 if (file_exists($file)) {
     header('Content-Description: File Transfer');
