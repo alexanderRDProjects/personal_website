@@ -3,8 +3,9 @@
 <title>SLtex Converter</title>
 </head>
 <body>
+<center>
 <table width = 100%>
-<tr>
+<tr width = 100%>
 <td>
 <center><h1>SLTex LaTex Converter</h1></center>
 </td>
@@ -16,14 +17,14 @@
 <tr>
 <td>
 <center>
-<textarea width = 45% id = "SLText">
+<textarea width = 95% id = "SLText">
 Enter Your SLTex here ...
 </textarea>
 </center>
 </td>
 <td>
 <center>
-<textarea width = 45% id = "SLText">
+<textarea width = 95% id = "SLText">
 Enter Your SLTex here ...
 </textarea>
 </center>
@@ -38,5 +39,6 @@ Enter Your SLTex here ...
 <td width = 25%><button>Download SLTex </button></td>
 </tr>
 </table>
+</center>
 </body>
 </html>
