@@ -16,12 +16,12 @@
 </tr>
 <tr>
 <td>
-<textarea id ="SLText" style="margin: 0px; width: 675px; height: 135px;">
+<textarea id ="SLText" style="margin: 0px; width: 670px; height: 135px;">
 Enter Your SLTex here ...
 </textarea>
 </td>
 <td>
-<textarea id="LaText" style="margin: 0px; width: 675px; height: 135px;">
+<textarea id="LaText" style="margin: 0px; width: 670px; height: 135px;">
 Enter Your LaTeX here ...
 </textarea>
 </td>
