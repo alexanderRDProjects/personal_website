@@ -20,12 +20,12 @@ textarea {
 <td width = 50%> LaTex </td>
 </tr>
 <tr>
-<td>
+<td width = 50%>
 <textarea id = "SLText">
 Enter Your SLTex here ...
 </textarea>
 </td>
-<td>
+<td width = 50%>
 <textarea id = "LaText">
 Enter Your SLTex here ...
 </textarea>
