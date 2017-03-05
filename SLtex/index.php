@@ -21,18 +21,14 @@ textarea {
 </tr>
 <tr>
 <td>
-<center>
-<textarea width = 95% id = "SLText">
+<textarea id = "SLText">
 Enter Your SLTex here ...
 </textarea>
-</center>
 </td>
 <td>
-<center>
-<textarea width = 95% id = "SLText">
+<textarea id = "LaText">
 Enter Your SLTex here ...
 </textarea>
-</center>
 </td>
 </tr>
 </table>
