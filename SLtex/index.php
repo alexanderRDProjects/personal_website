@@ -25,6 +25,8 @@ Enter Your SLTex here ...
 </textarea>
 </td>
 </tr>
+</table>
+<table width = 100%>
 <tr>
 <td width = 25%><button>Convert To LaTex</button></td>
 <td width = 25%><button>Download LaTex </button></td>
