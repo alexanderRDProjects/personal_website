@@ -1,4 +1,6 @@
 <?php
+
+$mushrooms = 'disjusting';
 $thefile = 'example.tex';
 
 /*if (file_exists($thefile)) {
@@ -13,5 +15,5 @@ $thefile = 'example.tex';
     exit;
 }
 */
-echo $thefile
+echo $thefile;
 ?> 
