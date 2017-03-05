@@ -1,12 +1,15 @@
 <?php
 
-header('Content-Description: File Transfer');
-header('Content-Type: application/octet-stream');
-header('Content-Disposition: attachment; filename="example.tex"');
-header('Expires: 0');
-header('Cache-Control: must-revalidate');
-header('Pragma: public');
-header('Content-Length: 1,1');
-echo "a";
+$str = "Some pseudo-random
+text spanning
+multiple lines";
+
+header('Content-Disposition: attachment; filename="sample.txt"');
+header('Content-Type: text/plain'); # Don't use application/force-download - it's not a real MIME type, and the Content-Disposition header is sufficient
+header('Content-Length: ' . strlen($str));
+header('Connection: close');
+
+
+echo $str;
 exit;
 ?>
