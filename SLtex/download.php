@@ -1,5 +1,5 @@
 <?php
-$thefile = 'example.tex';
+$thefile = "example.tex";
 
 if (file_exists($thefile)) {
     header('Content-Description: File Transfer');
