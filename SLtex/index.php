@@ -10,10 +10,10 @@ function CLatex () {
 function DLatex () {
 	alert("download Latex");
 }
-function CLatex () {
+function CSLTex () {
 	alert("convert to SLTex");
 }
-function CLatex () {
+function DSLTex () {
 	alert("download SLTex");
 }
 </script>
