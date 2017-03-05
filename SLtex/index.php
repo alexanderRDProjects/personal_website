@@ -6,7 +6,7 @@
 <script>
 function CLatex () {
 	alert("convert to Latex");
-	window.location.assign("convert.php?contents="+encodeURI(document.getElementById("SLText").value))
+	window.location.assign("convert.php?contents="+encodeURI(document.getElementById("SLText").innerHTML))
 }
 function DLatex () {
 	alert("download Latex");
