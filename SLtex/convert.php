@@ -1,6 +1,6 @@
 <?php
 $content = urldecode($_GET["contents"]);
-$output = []
+$output = [];
 var_dump($content);
 echo implode("\n",$output);
 ?>
