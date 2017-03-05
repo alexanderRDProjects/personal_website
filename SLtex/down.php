@@ -16,4 +16,4 @@ $thefile = 'example.tex';
 }
 */
 echo $thefile;
-?> 
+?>
