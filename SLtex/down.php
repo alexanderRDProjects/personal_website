@@ -1,6 +1,6 @@
 <?php
 $name = $_GET["name"];
-$contents = urldecode($_GET["contents"});
+$contents = urldecode($_GET["contents"]);
 
 //$str = "Some pseudo-random
 //text spanning
