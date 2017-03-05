@@ -6,7 +6,7 @@
 <table width = 100%>
 <tr>
 <td>
-<center><h1></h1></center>
+<center><h1>SLTex LaTex Converter</h1></center>
 </td>
 </tr>
 <tr>
@@ -15,14 +15,18 @@
 </tr>
 <tr>
 <td>
-<textarea id = "SLText">
+<center>
+<textarea width = 45% id = "SLText">
 Enter Your SLTex here ...
 </textarea>
+</center>
 </td>
 <td>
-<textarea id = "SLText">
+<center>
+<textarea width = 45% id = "SLText">
 Enter Your SLTex here ...
 </textarea>
+</center>
 </td>
 </tr>
 </table>
