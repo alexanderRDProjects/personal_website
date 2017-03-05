@@ -43,10 +43,10 @@ Enter Your LaTeX here ...
 </table>
 <table width = 100%>
 <tr>
-<td width = 25%><button onclick="CLatex">Convert To LaTex</button></td>
-<td width = 25%><button onclick="DLatex">Download LaTex </button></td>
-<td width = 25%><button onclick="CSLTex">Convert TO SLTex </button></td>
-<td width = 25%><button onclick="DSLTex">Download SLTex </button></td>
+<td width = 25%><button onclick="CLatex()">Convert To LaTex</button></td>
+<td width = 25%><button onclick="DLatex()">Download LaTex </button></td>
+<td width = 25%><button onclick="CSLTex()">Convert TO SLTex </button></td>
+<td width = 25%><button onclick="DSLTex()">Download SLTex </button></td>
 </tr>
 </table>
 </center>
