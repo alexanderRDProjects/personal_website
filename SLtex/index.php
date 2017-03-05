@@ -3,15 +3,15 @@
 <title>SLtex Converter</title>
 </head>
 <body>
-<table>
+<table width = 100%>
 <tr>
 <td>
 <center><h1></h1></center>
 </td>
 </tr>
 <tr>
-<td> SLTex </td>
-<td> LaTex </td>
+<td width = 50%> SLTex </td>
+<td width = 50%> LaTex </td>
 </tr>
 <tr>
 <td>
@@ -26,10 +26,10 @@ Enter Your SLTex here ...
 </td>
 </tr>
 <tr>
-<td><button>Convert To LaTex</button></td>
-<td><button>Download LaTex </button></td>
-<td><button>Convert TO SLTex </button></td>
-<td><button>Download SLTex </button></td>
+<td width = 25%><button>Convert To LaTex</button></td>
+<td width = 25%><button>Download LaTex </button></td>
+<td width = 25%><button>Convert TO SLTex </button></td>
+<td width = 25%><button>Download SLTex </button></td>
 </tr>
 </table>
 </body>
