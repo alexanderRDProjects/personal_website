@@ -1,7 +1,7 @@
 <?php
-$thefile = "example.tex";
+$thefile = 'example.tex';
 
-if (file_exists($thefile)) {
+/*if (file_exists($thefile)) {
     header('Content-Description: File Transfer');
     header('Content-Type: application/octet-stream');
     header('Content-Disposition: attachment; filename="'.basename($thefile).'"');
@@ -12,4 +12,6 @@ if (file_exists($thefile)) {
     readfile($thefile);
     exit;
 }
+*/
+echo $thefile
 ?> 
