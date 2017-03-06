@@ -4,7 +4,7 @@ $output = [];
 $input = array_filter(explode("\n",$content));
 var_dump($input);
 foreach($input as &$line) {
-	//echo "<p> unformatted line :".$line."</p>";
+	echo "<p> unformatted line :".$line."</p>";
 	$line = str_replace("pi","\pi",$line);
 	$line = str_replace("phi","\phi",$line);
 	$line = str_replace("cite ","\cite",$line);
@@ -23,9 +23,10 @@ foreach($input as &$line) {
 	//replace double //
 	$line = str_replace("\\\\","\\");
 	
-	//echo "<p> formatted line:".$line."</p>";
+	echo "<p> formatted line:".$line."</p>";
 	array_push($output,$line);
 }
+var_dump($output)
 echo implode("\n",$output);
 ?>
 	
