@@ -26,7 +26,7 @@ foreach($input as &$line) {
 	echo "<p> formatted line:".$line."</p>";
 	array_push($output,$line);
 }
-var_dump($output)
+var_dump($output);
 echo implode("\n",$output);
 ?>
 	
