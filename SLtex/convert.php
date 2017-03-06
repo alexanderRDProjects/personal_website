@@ -6,10 +6,10 @@ var_dump($input);
 $math_mode = false;
 foreach($input as &$line) {
 	if (strpos($line, '$$') !== false){
-		math_mode = !math_mode;
+		$math_mode = !$math_mode;
 	}
 	echo "<p> unformatted line :".$line."</p>";
-	if (math_mode){
+	if ($math_mode){
 		$line = str_replace("pi","\\pi",$line);
 		$line = str_replace("phi","\\phi",$line);
 	}
