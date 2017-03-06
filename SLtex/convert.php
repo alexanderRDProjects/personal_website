@@ -7,9 +7,11 @@ $math_mode = false;
 $input[0] = str_replace("documentclass{article}","\\documentclass{article}",$input[0]);
 //replace double //
 $input[0] = str_replace("\\\\","\\",$input[0]);
-if (strpos($input[0],"\\documentclass{article}") == false){
-	array_push($output,"\\documentclass{article}");
-}
+if ($input[0] !== "\\documentclass{article}" ){
+	if (strpos($input[0],"\\documentclass{article}") == false){
+		array_push($output,"\\documentclass{article}");
+	}
+} 
 //header checks need to go here
 if (strpos(implode(" ",$input),"\\begin{document}") == false){
 	array_push($output,"\\begin{document}");
