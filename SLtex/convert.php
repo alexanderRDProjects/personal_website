@@ -48,6 +48,16 @@ foreach($input as &$line) {
 		$line = str_replace("$\\$\\","$\\",$line);
 		$line = str_replace("$$","$",$line);
 	}
+	if (strpos($line, "$*") !== false){
+		$line = explode(" ",$line);
+		foreach ($line as &$word){
+			if (strpos($word, "$*") !== false){
+				$word = str_replace("$*","",$word);
+				$word = str_replace("$","",$word);
+			}
+		}
+		$line = implode(" ",$line);
+	}
 	
 	//echo "<p> formatted line:".$line."</p>";
 	array_push($output,$line);
