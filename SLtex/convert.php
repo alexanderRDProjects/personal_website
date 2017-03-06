@@ -11,7 +11,7 @@ if (strpos($input[0],"\\documentclass") == false){
 	array_push($output,"\\documentclass{article}");
 }
 //header checks need to go here
-if (strpos(implode(" ",$input),"\\begin{document}" == false){
+if (strpos(implode(" ",$input),"\\begin{document}") == false){
 	array_push($output,"\\begin{document}");
 }
 foreach($input as &$line) {
