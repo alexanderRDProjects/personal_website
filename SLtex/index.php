@@ -13,6 +13,7 @@ function CLatex () {
 		}
 	};
   xhttp.open("GET", "convert.php?contents="+encodeURI(document.getElementById("SLText").value), true);
+  console.log("Request sent to : convert.php?contents="+encodeURI(document.getElementById("SLText").value));
   xhttp.send();
 }
 function DLatex () {

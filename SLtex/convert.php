@@ -2,7 +2,7 @@
 $content = urldecode($_GET["contents"]);
 $output = [];
 $input = array_filter(explode("\n",$content));
-var_dump($input);
+//var_dump($input);
 $math_mode = false;
 $input[0] = str_replace("documentclass","\\documentclass",$input[0]);
 //replace double //
@@ -14,7 +14,7 @@ foreach($input as &$line) {
 	if (strpos($line, '$$') !== false){
 		$math_mode = !$math_mode;
 	}
-	echo "<p> unformatted line :".$line."</p>";
+	//echo "<p> unformatted line :".$line."</p>";
 	if ($math_mode){
 		$line = str_replace("pi","\\pi",$line);
 		$line = str_replace("phi","\\phi",$line);
@@ -40,10 +40,10 @@ foreach($input as &$line) {
 	$line = str_replace("\\\\","\\",$line);
 	
 	
-	echo "<p> formatted line:".$line."</p>";
+	//echo "<p> formatted line:".$line."</p>";
 	array_push($output,$line);
 }
-var_dump($output);
+//var_dump($output);
 echo implode("\n",$output);
 ?>
 	
