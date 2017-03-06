@@ -53,7 +53,7 @@ foreach($input as &$line) {
 		foreach ($line as &$word){
 			if (strpos($word, "$*") !== false){
 				$word = str_replace("$*","",$word);
-				$word = str_replace("$","",$word);
+				$word = str_replace("$\","",$word);
 			}
 		}
 		$line = implode(" ",$line);
