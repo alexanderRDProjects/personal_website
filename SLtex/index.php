@@ -59,5 +59,14 @@ Enter Your LaTeX here ...
 </tr>
 </table>
 </center>
+<h3> Instructions </h3>
+<p>SLTex stands for Shorthard LaTeX and will correct your document by adding syntax to make it a valid LaTeX document.</p>
+<p> currently SLTex does the following things </p>
+<ul>
+<li>adds slashes to mathematic constants (only pi and phi but will do the rest) and puts them in inline math mode</li>
+<li>adds a document class if not found in document</li>
+<li>adds begin and end document if not found in document</li>
+</ul>
+SLTex is an extension for LaTex so if you give it a valid LaTeX document it will not edit anything apart from commands without slashes which need to be escaped by adding a * on the end eg (pi* => pi but pi => \pi ($\pi$ if not in math mode))
 </body>
 </html>
