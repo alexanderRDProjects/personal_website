@@ -6,7 +6,14 @@
 <script>
 function CLatex () {
 	alert("convert to Latex");
-	window.location.assign("convert.php?contents="+encodeURI(document.getElementById("SLText").value))
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+		document.getElementById("LaText").innerHTML = this.responseText;
+		}
+	};
+  xhttp.open("GET", "convert.php?contents="+encodeURI(document.getElementById("SLText").value), true);
+  xhttp.send();
 }
 function DLatex () {
 	alert("download Latex");
