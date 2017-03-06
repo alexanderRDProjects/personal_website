@@ -47,7 +47,7 @@ foreach($input as &$line) {
 	//echo "<p> formatted line:".$line."</p>";
 	array_push($output,$line);
 }
-if (strpos(implode(" ",$input),"\\end{document}" == false){
+if (strpos(implode(" ",$input),"\\end{document}") == false){
 	array_push($output,"\\end{document}");
 }
 //var_dump($output);
