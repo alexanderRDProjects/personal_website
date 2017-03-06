@@ -59,7 +59,7 @@ function signOut() {
     background-color: rgba(238,238,238,0.5);
 ">
 <h1> Coding, Web Design and More </h1>
-<h4>where it all happens</h4>
+<h4><br></h4>
 <p><br></p>
 <h2> Built With </h2>
 <p><br></p>
