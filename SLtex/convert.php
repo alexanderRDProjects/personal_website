@@ -58,15 +58,17 @@ foreach($input as &$line) {
 		}
 		$line = implode(" ",$line);
 	}
-	if ((strpos($line, "*" !== false) && (math_mode == false)) {
-		$line = explode(" ",$line);
-		foreach ($line as &$word){
-			if (strpos($word, "*") !== false){
-				$word = str_replace("*","",$word);
-				$word = str_replace("\\","",$word);
+	if (strpos($line, "*" !== false) {
+		if ($math_mode == false) {
+			$line = explode(" ",$line);
+			foreach ($line as &$word){
+				if (strpos($word, "*") !== false){
+					$word = str_replace("*","",$word);
+					$word = str_replace("\\","",$word);
+				}
 			}
+			$line = implode(" ",$line);
 		}
-		$line = implode(" ",$line);
 	}
 	
 	//echo "<p> formatted line:".$line."</p>";
