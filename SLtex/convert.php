@@ -42,7 +42,10 @@ foreach($input as &$line) {
 	$line = str_replace("subsubsection","\\subsubsection",$line);
 	//replace double //
 	$line = str_replace("\\\\","\\",$line);
-	
+	if (strpos($line, "$\\$\\") !== false){
+		$line = str_replace("$\\$\\","$\\",$line);
+		$line = str_replace("$$","$");
+	}
 	
 	//echo "<p> formatted line:".$line."</p>";
 	array_push($output,$line);
