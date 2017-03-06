@@ -4,6 +4,12 @@ $output = [];
 $input = array_filter(explode("\n",$content));
 var_dump($input);
 $math_mode = false;
+$input[0] = str_replace("documentclass","\\documentclass",$input[0]);
+//replace double //
+$input[0] = str_replace("\\\\","\\",$line);
+if (strpos($input[0],"\\documentclass") == false){
+	array_push($output,"\\documentclass{article}");
+}
 foreach($input as &$line) {
 	if (strpos($line, '$$') !== false){
 		$math_mode = !$math_mode;
