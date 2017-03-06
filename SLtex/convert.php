@@ -4,10 +4,10 @@ $output = [];
 $input = array_filter(explode("\n",$content));
 //var_dump($input);
 $math_mode = false;
-$input[0] = str_replace("documentclass","\\documentclass",$input[0]);
+$input[0] = str_replace("documentclass{article}","\\documentclass{article}",$input[0]);
 //replace double //
 $input[0] = str_replace("\\\\","\\",$input[0]);
-if (strpos($input[0],"\\documentclass") == false){
+if (strpos($input[0],"\\documentclass{article}") == false){
 	array_push($output,"\\documentclass{article}");
 }
 //header checks need to go here
