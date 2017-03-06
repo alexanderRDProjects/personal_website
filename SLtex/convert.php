@@ -3,10 +3,20 @@ $content = urldecode($_GET["contents"]);
 $output = [];
 $input = array_filter(explode("\n",$content));
 var_dump($input);
+$math_mode = false;
 foreach($input as &$line) {
+	if (strpos($line, '$$') !== false){
+		math_mode = !math_mode;
+	}
 	echo "<p> unformatted line :".$line."</p>";
-	$line = str_replace("pi","\\pi",$line);
-	$line = str_replace("phi","\\phi",$line);
+	if (math_mode){
+		$line = str_replace("pi","\\pi",$line);
+		$line = str_replace("phi","\\phi",$line);
+	}
+	else{
+		$line = str_replace("pi","$\\pi$",$line);
+		$line = str_replace("phi","$\\phi$",$line);
+	}
 	$line = str_replace("cite ","\\cite",$line);
 	$line = str_replace("date","\\date",$line);
 	$line = str_replace("dot","\\dot",$line);
@@ -22,6 +32,7 @@ foreach($input as &$line) {
 	$line = str_replace("subsubsection","\\subsubsection",$line);
 	//replace double //
 	$line = str_replace("\\\\","\\",$line);
+	
 	
 	echo "<p> formatted line:".$line."</p>";
 	array_push($output,$line);
