@@ -10,6 +10,10 @@ $input[0] = str_replace("\\\\","\\",$input[0]);
 if (strpos($input[0],"\\documentclass") == false){
 	array_push($output,"\\documentclass{article}");
 }
+//header checks need to go here
+if (strpos(implode(" ",$input),"\\begin{document}" == false){
+	array_push($output,"\\begin{document}");
+}
 foreach($input as &$line) {
 	if (strpos($line, '$$') !== false){
 		$math_mode = !$math_mode;
@@ -42,6 +46,9 @@ foreach($input as &$line) {
 	
 	//echo "<p> formatted line:".$line."</p>";
 	array_push($output,$line);
+}
+if (strpos(implode(" ",$input),"\\end{document}" == false){
+	array_push($output,"\\end{document}");
 }
 //var_dump($output);
 echo implode("\n",$output);
