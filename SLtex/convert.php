@@ -21,7 +21,7 @@ foreach($input as &$line) {
 	$line = str_replace("subsection","\\subsection",$line);
 	$line = str_replace("subsubsection","\\subsubsection",$line);
 	//replace double //
-	$line = str_replace("\\\\","\\");
+	$line = str_replace("\\\\","\\",$line);
 	
 	echo "<p> formatted line:".$line."</p>";
 	array_push($output,$line);
