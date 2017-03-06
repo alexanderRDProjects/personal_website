@@ -44,7 +44,7 @@ foreach($input as &$line) {
 	$line = str_replace("\\\\","\\",$line);
 	if (strpos($line, "$\\$\\") !== false){
 		$line = str_replace("$\\$\\","$\\",$line);
-		$line = str_replace("$$","$");
+		$line = str_replace("$$","$",$line);
 	}
 	
 	//echo "<p> formatted line:".$line."</p>";
