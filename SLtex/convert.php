@@ -58,7 +58,7 @@ foreach($input as &$line) {
 		}
 		$line = implode(" ",$line);
 	}
-	if (strpos($line, "*" !== false && math_mode == false) {
+	if ((strpos($line, "*" !== false) && (math_mode == false)) {
 		$line = explode(" ",$line);
 		foreach ($line as &$word){
 			if (strpos($word, "*") !== false){
