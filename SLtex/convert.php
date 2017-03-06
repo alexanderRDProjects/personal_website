@@ -6,7 +6,7 @@ var_dump($input);
 $math_mode = false;
 $input[0] = str_replace("documentclass","\\documentclass",$input[0]);
 //replace double //
-$input[0] = str_replace("\\\\","\\",$line);
+$input[0] = str_replace("\\\\","\\",$input[0]);
 if (strpos($input[0],"\\documentclass") == false){
 	array_push($output,"\\documentclass{article}");
 }
