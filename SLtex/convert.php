@@ -12,6 +12,18 @@ if ($input[0] !== "\\documentclass{article}" ){
 		array_push($output,"\\documentclass{article}");
 	}
 } 
+foreach($input as &$line) {
+	//consider first word
+	$words = array_filter(explode(" ",$line));
+	if ($words[0] == "author"){
+		$words[0] = "\author{";
+		array_push($words,"}");
+	}
+	if ($words[0] == "title"){
+		$words[0] = "\title{";
+		array_push($words,"}");
+	}
+}
 //header checks need to go here
 if (strpos(implode(" ",$input),"\\begin{document}") == false){
 	array_push($output,"\\begin{document}");
@@ -22,6 +34,10 @@ foreach($input as &$line) {
 	$words = array_filter(explode(" ",$line));
 	if ($words[0] == "section"){
 		$words[0] = "\section{";
+		array_push($words,"}");
+	}
+	if ($words[0] == "subsection"){
+		$words[0] = "\subsection{";
 		array_push($words,"}");
 	}
 	
