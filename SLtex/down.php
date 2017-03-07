@@ -135,5 +135,6 @@ if (strpos(implode(" ",$input),"\\end{document}") == false){
 }
 //var_dump($output);
 echo implode("\n",$output);
+
 exit;
 ?>
