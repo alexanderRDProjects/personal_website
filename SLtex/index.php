@@ -20,7 +20,7 @@ function DLatex () {
 	//alert("download Latex");
 	var xhttp = new XMLHttpRequest();
   xhttp.open("GET", "down.php?contents="+encodeURI(document.getElementById("SLText").value), true);
-  console.log("Request sent to : down.php?contents="+encodeURI(document.getElementById("SLText").value));
+  console.log("Request sent to : down.php?&name=document&contents="+encodeURI(document.getElementById("SLText").value));
   xhttp.send();
 }
 function CSLTex () {
