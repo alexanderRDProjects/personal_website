@@ -30,7 +30,7 @@ foreach($input as &$line) {
 	if ($meta == true){
 		$head = implode(" ",$words);
 		$head = str_replace("{ ","{",$head);
-		$head = str_replace("} ","}",$head);
+		$head = str_replace(" }","}",$head);
 		$line = "";
 		array_push($output,$head);
 	}
@@ -80,7 +80,6 @@ foreach($input as &$line) {
 	$line = str_replace("subsection","\\subsection",$line);
 	$line = str_replace("subsubsection","\\subsubsection",$line);
 	$line = str_replace("{ ","{",$line);
-	$line = str_replace(" }","}",$line);
 	$line = str_replace(" }","}",$line);
 	//replace double //
 	$line = str_replace("\\\\","\\",$line);
