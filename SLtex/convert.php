@@ -39,7 +39,7 @@ foreach($input as &$line) {
 if (strpos(implode(" ",$input),"\\begin{document}") == false){
 	array_push($output,"\\begin{document}");
 }
-
+$input = array_filter($input);
 foreach($input as &$line) {
 	//first check if header
 	//consider first word
