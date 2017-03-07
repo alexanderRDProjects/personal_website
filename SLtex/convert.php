@@ -29,6 +29,8 @@ foreach($input as &$line) {
 	}
 	if ($meta == true){
 		$head = implode(" ",$words);
+		$head = str_replace("{ ","{",$head);
+		$head = str_replace("} ","}",$head);
 		array_push($output,$head);
 	}
 }
@@ -51,7 +53,8 @@ foreach($input as &$line) {
 				$words[0] = "\subsection{";
 				array_push($words,"}");
 			}
-			
+			$line = str_replace("{ ","{",$line);
+			$line = str_replace("} ","}",$line);
 			$line = implode(" ",$words);
 			if (strpos($line, '$$') !== false){
 				$math_mode = !$math_mode;
