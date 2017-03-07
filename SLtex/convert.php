@@ -45,8 +45,6 @@ foreach($input as &$line) {
 	//consider first word
 	$words = array_filter(explode(" ",$line));
 
-
-	echo $words[0]
 	if ($words[0] == "section"){
 		$words[0] = "\section{";
 		array_push($words,"}");
