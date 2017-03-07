@@ -53,8 +53,6 @@ foreach($input as &$line) {
 				$words[0] = "\subsection{";
 				array_push($words,"}");
 			}
-			$line = str_replace("{ ","{",$line);
-			$line = str_replace("} ","}",$line);
 			$line = implode(" ",$words);
 			if (strpos($line, '$$') !== false){
 				$math_mode = !$math_mode;
@@ -81,6 +79,8 @@ foreach($input as &$line) {
 			//$line = str_replace("section","\\section",$line);
 			$line = str_replace("subsection","\\subsection",$line);
 			$line = str_replace("subsubsection","\\subsubsection",$line);
+			$line = str_replace("{ ","{",$line);
+			$line = str_replace(" }","}",$line);
 			//replace double //
 			$line = str_replace("\\\\","\\",$line);
 			if (strpos($line, "$\\$\\") !== false){
