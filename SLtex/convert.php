@@ -12,6 +12,10 @@ if ($input[0] !== "\\documentclass{article}" ){
 		array_push($output,"\\documentclass{article}");
 	}
 } 
+function read_math (&$line) {
+	$line = str_replace("pi","\\pi",$line);
+	$line = str_replace("phi","\\phi",$line);
+}
 $meta = false;
 foreach($input as &$line) {
 	$meta = false;
@@ -53,14 +57,15 @@ foreach($input as &$line) {
 		$words[0] = "\subsection{";
 		array_push($words,"}");
 	}
+	if ($words[0] == "equation"){
+		$words = "\begin{equation}\n".read_math(implode(" ",array_shift($words)))."\n\end{equation}"
 	$line = implode(" ",$words);
 	if (strpos($line, '$$') !== false){
 		$math_mode = !$math_mode;
 	}
 	//echo "<p> unformatted line :".$line."</p>";
 	if ($math_mode){
-		$line = str_replace("pi","\\pi",$line);
-		$line = str_replace("phi","\\phi",$line);
+		read_math($line);
 	}
 	else{
 		$line = str_replace("pi","$\\pi$",$line);
