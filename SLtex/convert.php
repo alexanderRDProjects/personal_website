@@ -16,7 +16,15 @@ if ($input[0] !== "\\documentclass{article}" ){
 if (strpos(implode(" ",$input),"\\begin{document}") == false){
 	array_push($output,"\\begin{document}");
 }
+
 foreach($input as &$line) {
+	//consider first word
+	$words = array_filter(explode(" ",$line));
+	if ($words[0] == "section"){
+		$words[0] == "\section{";
+		array_push($words,"}");
+	}
+	$line = implode(" ",$words);
 	if (strpos($line, '$$') !== false){
 		$math_mode = !$math_mode;
 	}
