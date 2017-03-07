@@ -45,6 +45,7 @@ foreach($input as &$line) {
 	$words = array_filter(explode(" ",$line));
 	if ($words[0] != "author"){
 		if ($words[0] != "title") {
+			echo $words[0],"\n";
 			if ($words[0] == "section"){
 				$words[0] = "\section{";
 				array_push($words,"}");
