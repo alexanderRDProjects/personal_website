@@ -24,6 +24,7 @@ foreach($input as &$line) {
 		$words[0] == "\section{";
 		array_push($words,"}");
 	}
+	
 	$line = implode(" ",$words);
 	if (strpos($line, '$$') !== false){
 		$math_mode = !$math_mode;
@@ -47,7 +48,7 @@ foreach($input as &$line) {
 	$line = str_replace("dfrac","\\dfrac",$line);
 	$line = str_replace("ref","\\ref",$line);
 	$line = str_replace("label","\\label",$line);
-	$line = str_replace("section","\\section",$line);
+	//$line = str_replace("section","\\section",$line);
 	$line = str_replace("subsection","\\subsection",$line);
 	$line = str_replace("subsubsection","\\subsubsection",$line);
 	//replace double //
