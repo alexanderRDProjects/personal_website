@@ -81,6 +81,7 @@ foreach($input as &$line) {
 	$line = str_replace("subsubsection","\\subsubsection",$line);
 	$line = str_replace("{ ","{",$line);
 	$line = str_replace(" }","}",$line);
+	$line = str_replace(" }","}",$line);
 	//replace double //
 	$line = str_replace("\\\\","\\",$line);
 	if (strpos($line, "$\\$\\") !== false){
