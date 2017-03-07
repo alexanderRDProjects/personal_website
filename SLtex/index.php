@@ -57,7 +57,7 @@ Receive Your LaTeX here ...
 <table width = 100%>
 <tr>
 <td width = 50%><button onclick="CLatex()">Convert To LaTex</button></td>
-<td width = 50%><button onclick="DLatex()">Download LaTex </button></td>
+<td width = 50%><button onclick="DLatex()">Download LaTex (not working) </button></td>
 <!-- <td width = 25%><button onclick="CSLTex()">Convert TO SLTex </button></td>  -->
 <!-- <td width = 25%><button onclick="DSLTex()">Download SLTex </button></td> -->
 </tr>
