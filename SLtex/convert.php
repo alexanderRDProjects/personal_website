@@ -29,7 +29,7 @@ foreach($input as &$line) {
 	}
 	if ($meta == true){
 		$head = implode(" ",$words);
-		array_push($head);
+		array_push($output,$head);
 	}
 }
 //header checks need to go here
