@@ -57,9 +57,6 @@ foreach($input as &$line) {
 		$words[0] = "\subsection{";
 		array_push($words,"}");
 	}
-	if ($words[0] == "equation"){
-		$words = "\begin{equation}\n".read_math(implode(" ",array_shift($words)))."\n\end{equation}";
-	}
 	$line = implode(" ",$words);
 	if (strpos($line, '$$') !== false){
 		$math_mode = !$math_mode;
