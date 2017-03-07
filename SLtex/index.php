@@ -17,7 +17,11 @@ function CLatex () {
   xhttp.send();
 }
 function DLatex () {
-	alert("download Latex");
+	//alert("download Latex");
+	var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "down.php?contents="+encodeURI(document.getElementById("SLText").value), true);
+  console.log("Request sent to : down.php?contents="+encodeURI(document.getElementById("SLText").value));
+  xhttp.send();
 }
 function CSLTex () {
 	alert("convert to SLTex");
@@ -45,17 +49,17 @@ Enter Your SLTex here ...
 </td>
 <td>
 <textarea id="LaText" style="margin: 0px; width: 670px; height: 135px;">
-Enter Your LaTeX here ...
+Receive Your LaTeX here ...
 </textarea>
 </td>
 </tr>
 </table>
 <table width = 100%>
 <tr>
-<td width = 25%><button onclick="CLatex()">Convert To LaTex</button></td>
-<td width = 25%><button onclick="DLatex()">Download LaTex </button></td>
-<td width = 25%><button onclick="CSLTex()">Convert TO SLTex </button></td>
-<td width = 25%><button onclick="DSLTex()">Download SLTex </button></td>
+<td width = 50%><button onclick="CLatex()">Convert To LaTex</button></td>
+<td width = 50%><button onclick="DLatex()">Download LaTex </button></td>
+<!-- <td width = 25%><button onclick="CSLTex()">Convert TO SLTex </button></td>  -->
+<!-- <td width = 25%><button onclick="DSLTex()">Download SLTex </button></td> -->
 </tr>
 </table>
 </center>
