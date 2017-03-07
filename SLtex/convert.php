@@ -19,12 +19,12 @@ foreach($input as &$line) {
 	$words = array_filter(explode(" ",$line));
 	if ($words[0] == "author"){
 		$meta = true;
-		$words[0] = "\author{";
+		$words[0] = "\\author{";
 		array_push($words,"}");
 	}
 	if ($words[0] == "title"){
 		$meta = true;
-		$words[0] = "\title{";
+		$words[0] = "\\title{";
 		array_push($words,"}");
 	}
 	if ($meta == true){
