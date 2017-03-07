@@ -21,7 +21,7 @@ foreach($input as &$line) {
 	//consider first word
 	$words = array_filter(explode(" ",$line));
 	if ($words[0] == "section"){
-		$words[0] == "\section{";
+		$words[0] = "\section{";
 		array_push($words,"}");
 	}
 	
