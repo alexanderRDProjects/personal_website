@@ -19,7 +19,7 @@ function CLatex () {
 function DLatex () {
 	//alert("download Latex");
 	var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "down.php?&name=document&contents="+"+encodeURI(document.getElementById("SLText").value), true);
+  xhttp.open("GET", "down.php?&name=document&contents="+encodeURI(document.getElementById("SLText").value), true);
   console.log("Request sent to : down.php?&name=document&contents="+encodeURI(document.getElementById("SLText").value));
   xhttp.send();
 }
