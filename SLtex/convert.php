@@ -15,6 +15,9 @@ if ($input[0] !== "\\documentclass{article}" ){
 function read_math (&$line) {
 	$line = str_replace("pi","\\pi",$line);
 	$line = str_replace("phi","\\phi",$line);
+	$line = str_replace("sigma","\\sigma",$line);
+	$line = str_replace("alpha","\\alpha",$line);
+	$line = str_replace("beta","\\beta",$line);
 }
 $meta = false;
 foreach($input as &$line) {
@@ -68,6 +71,10 @@ foreach($input as &$line) {
 	else{
 		$line = str_replace("pi","$\\pi$",$line);
 		$line = str_replace("phi","$\\phi$",$line);
+		$line = str_replace("sigma","$\\sigma$",$line);
+		$line = str_replace("alpha","$\\alpha$",$line);
+		$line = str_replace("beta","$\\beta$",$line);
+		
 	}
 	$line = str_replace("cite ","\\cite",$line);
 	$line = str_replace("date","\\date",$line);

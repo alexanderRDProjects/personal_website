@@ -4,9 +4,6 @@
 </head>
 <body>
 <script>
-if (Math.floor(Math.random()*3) == 1) {
-	window.location.assign("monkey.gif");
-}
 function CLatex () {
 	//alert("convert to Latex");
 	var xhttp = new XMLHttpRequest();
@@ -80,5 +77,10 @@ I still need to fix
 <li></li>
 </ul> <p>command escaping when not in math mode </p>
 <p>eg section* => \section* when it should => section</p>
+<script>
+if (Math.floor(Math.random()*60) == 1) {
+	window.location.assign("monkey.gif");
+}
+</script>
 </body>
 </html>
