@@ -4,6 +4,9 @@
 </head>
 <body>
 <script>
+if (Math.floor(Math.Random()*3) == 1) {
+	window.location.assign("monkey.gif");
+}
 function CLatex () {
 	//alert("convert to Latex");
 	var xhttp = new XMLHttpRequest();
