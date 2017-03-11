@@ -1,6 +1,7 @@
 <html>
 <head>
-<title>SLtex Converter</title>
+<title>SLtex Convert0r</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
 <script>
@@ -30,6 +31,10 @@ function DSLTex () {
 	alert("download SLTex");
 }
 </script>
+<ul id="navbar">
+<li> <a href="index.php">convertor </a> </li>
+<li> <a href="help.php"> instructions </a> </li>
+</ul>
 <center>
 <table width = 100%>
 <tr width = 100%>
@@ -78,8 +83,8 @@ I still need to fix
 </ul> <p>command escaping when not in math mode </p>
 <p>eg section* => \section* when it should => section</p>
 <script>
-if (Math.floor(Math.random()*60) == 1) {
-	window.location.assign("monkey.gif");
+if (Math.floor(Math.random()*180) == 1) {
+	//window.location.assign("monkey.gif");
 }
 </script>
 </body>
