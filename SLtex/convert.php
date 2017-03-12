@@ -70,7 +70,15 @@ foreach($input as &$line) {
 		array_push($words,"\n$$");
 	}
 	if ($words[0] == "figure") {
-		$words[0] = "\\begin{figure}\n\\includegraphics{".implode("_",$words[1:count($words)-1).".png}\n\\caption{";
+		$path = "";
+		for ($path_index = 1;$path_index < count($words);$path_index++) {
+			if ($path_index == 1){
+				$path = $words[1];
+			} else {
+				$path = $path."_".words[$path_index];
+			}
+		}
+		$words[0] = "\\begin{figure}\n\\includegraphics{".$path.".png}\n\\caption{";
 		array_push($words,"}\n\end{figure}");
 	}
 	$line = implode(" ",$words);
