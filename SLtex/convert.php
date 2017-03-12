@@ -67,11 +67,11 @@ foreach($input as &$line) {
 	}
 	if ($words[0] == "expression"){
 		$words[0] = "$$\n";
-		// put check for label in here
 		array_push($words,"\n$$");
 	}
 	if ($words[0] == "figure") {
-		$words = "\\begin{figure}\n\\includegraphics{".implode("_",array_shift($words)).".png}\n\\caption{".implode(" ",array_shift($words))."}\n\end{figure}";
+		$words[0] = "\\begin{figure}\n\\includegraphics{".implode("_",$words[1:count($words)-1).".png}\n\\caption{";
+		array_push($words,"}\n\end{figure}");
 	}
 	$line = implode(" ",$words);
 	if (strpos($line, '$$') !== false){
