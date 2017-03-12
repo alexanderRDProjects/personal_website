@@ -79,7 +79,7 @@ foreach($input as &$line) {
 			}
 		}
 		$words[0] = "\\begin{figure}\n\\includegraphics{".$path.".png}\n\\caption{";
-		array_push($words,"}\n\end{figure}");
+		array_push($words,"}\n\\end{figure}");
 	}
 	$line = implode(" ",$words);
 	if (strpos($line, '$$') !== false){
