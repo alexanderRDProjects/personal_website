@@ -11,7 +11,7 @@ if ($input[0] !== "\\documentclass{article}" ){
 	if (strpos($input[0],"\\documentclass{article}") == false){
 		array_push($output,"\\documentclass{article}");
 	}
-} 
+}
 function read_math (&$line) {
 	$line = str_replace("pi","\\pi",$line);
 	$line = str_replace("phi","\\phi",$line);
@@ -53,12 +53,17 @@ foreach($input as &$line) {
 	$words = array_filter(explode(" ",$line));
 
 	if ($words[0] == "section"){
-		$words[0] = "\section{";
+		$words[0] = "\\section{";
 		array_push($words,"}");
 	}
 	if ($words[0] == "subsection"){
-		$words[0] = "\subsection{";
+		$words[0] = "\\subsection{";
 		array_push($words,"}");
+	}
+	if ($words[0] == "equation"){
+		$words[0] = "\\begin{equation}"
+		// put check for label in here
+		array_push($words,"\\end{equation}")
 	}
 	$line = implode(" ",$words);
 	if (strpos($line, '$$') !== false){
@@ -87,7 +92,7 @@ foreach($input as &$line) {
 	$line = str_replace("ref","\\ref",$line);
 	$line = str_replace("label","\\label",$line);
 	//$line = str_replace("section","\\section",$line);
-	$line = str_replace("subsection","\\subsection",$line);
+	//$line = str_replace("subsection","\\subsection",$line);
 	$line = str_replace("subsubsection","\\subsubsection",$line);
 	$line = str_replace("{ ","{",$line);
 	$line = str_replace(" }","}",$line);

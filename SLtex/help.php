@@ -60,12 +60,13 @@ the following table each commands following by its parameters (if there are mult
 <tr>
 <td>biblography</td>
 <td>name of biblography</td>
-<td>links biblography to page and provides a reference page (indexed in table of contents if table of contents is present)</td>
+<td>links the biblography name_of_biblography.bib to page and provides a reference page (indexed in table of contents if table of contents is present)</td>
+<td>biblography ref</td>
 </tr>
 </table>
 <h4>Mathematical symbols</h4>
 SLTex automaticly inserts slashs before mathematical constaints if not present so the names are unchanged you just dont have to include the slashs
 <h4>Referencing</h4>
-SLTex will automaticly reference and cite any references and citations to ensure that it finds all of the references please use the labelling scheme used by the automatic labeling system. To ensure that SLTex finds your citation place them in squares brackets SLTex will treat any text in square brackets as citations so the * escape operator can be used to tell SLTex it is not a reference eg [ref] is a reference however [text]* is not a reference
+SLTex will automaticly reference and cite any references and citations to ensure that it finds all of the references please use the labelling scheme used by the automatic labeling system. To ensure that SLTex finds your citation place them in squares brackets SLTex will treat any text in square brackets as citations so the * escape operator can be used to tell SLTex it is not a reference eg [ref] is a reference however [ref]* is not a reference
 </body>
 </html>
