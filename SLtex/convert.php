@@ -93,9 +93,9 @@ foreach($input as &$line) {
 	}
 	else{
 		$line = str_replace("pi","$\\pi$",$line);
-		//$line = preg_replace('/\pi\b/', '$\\pi$', $line);
-		//$line = preg_replace('/\phi\b/', '$\\phi$', $line);
-		$line = str_replace("phi","$\\phi$",$line);
+		//$line = preg_replace('/\bpi\b/', '$\\pi$', $line);
+		$line = preg_replace('/\bphi\b/', '$\\phi$', $line);
+		//$line = str_replace("phi","$\\phi$",$line);
 		$line = str_replace("sigma","$\\sigma$",$line);
 		$line = str_replace("alpha","$\\alpha$",$line);
 		$line = str_replace("beta","$\\beta$",$line);
