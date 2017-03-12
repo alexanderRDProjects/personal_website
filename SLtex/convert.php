@@ -75,7 +75,7 @@ foreach($input as &$line) {
 			if ($path_index == 1){
 				$path = $words[1];
 			} else {
-				$path = $path."_".words[$path_index];
+				$path = $path."_".$words[$path_index];
 			}
 		}
 		$words[0] = "\\begin{figure}\n\\includegraphics{".$path.".png}\n\\caption{";
