@@ -13,8 +13,10 @@ if ($input[0] !== "\\documentclass{article}" ){
 	}
 }
 function read_math (&$line) {
-	$line = str_replace("pi","\\pi",$line);
-	$line = str_replace("phi","\\phi",$line);
+	$line = preg_replace('/\pi\b/', '\\pi', $line);
+	$line = preg_replace('/\phi\b/', '\\phi', $line);
+	//$line = str_replace("pi","\\pi",$line);
+	//$line = str_replace("phi","\\phi",$line);
 	$line = str_replace("sigma","\\sigma",$line);
 	$line = str_replace("alpha","\\alpha",$line);
 	$line = str_replace("beta","\\beta",$line);
@@ -90,8 +92,10 @@ foreach($input as &$line) {
 		read_math($line);
 	}
 	else{
-		$line = str_replace("pi","$\\pi$",$line);
-		$line = str_replace("phi","$\\phi$",$line);
+		//$line = str_replace("pi","$\\pi$",$line);
+		$line = preg_replace('/\pi\b/', '$\\pi$', $line);
+		$line = preg_replace('/\phi\b/', '$\\phi$', $line);
+		//$line = str_replace("phi","$\\phi$",$line);
 		$line = str_replace("sigma","$\\sigma$",$line);
 		$line = str_replace("alpha","$\\alpha$",$line);
 		$line = str_replace("beta","$\\beta$",$line);
