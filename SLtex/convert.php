@@ -61,9 +61,9 @@ foreach($input as &$line) {
 		array_push($words,"}");
 	}
 	if ($words[0] == "equation"){
-		$words[0] = "\\begin{equation}"
+		$words[0] = "\\begin{equation}";
 		// put check for label in here
-		array_push($words,"\\end{equation}")
+		array_push($words,"\\end{equation}");
 	}
 	$line = implode(" ",$words);
 	if (strpos($line, '$$') !== false){
