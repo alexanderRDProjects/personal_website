@@ -80,9 +80,10 @@ foreach($input as &$line) {
 				$path = $path."_".$words[$path_index];
 			}
 		}
-		$words[0] = "\\begin{figure}[h!]\n\\includegraphics[scale=0.39]{".$path.".png}\n\\label{".$path."}\n\\caption{";
 		array_push($words,"}\n\\end{figure}");
-		var_dump(explode("_",$words));
+		$words = implode("_",$words);
+		$words = explode("_",$words);
+		$words[0] = "\\begin{figure}[h!]\n\\includegraphics[scale=0.39]{".$path.".png}\n\\label{".$path."}\n\\caption{";
 	}
 	$line = implode(" ",$words);
 	if (strpos($line, '$$') !== false){
