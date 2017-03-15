@@ -10,6 +10,14 @@ $input[0] = str_replace("\\\\","\\",$input[0]);
 if ($input[0] !== "\\documentclass{article}" ){
 	if (strpos($input[0],"\\documentclass{article}") == false){
 		array_push($output,"\\documentclass{article}");
+		//need to check if dependancies are actually needed
+		array_push($output,"\\usepackage{amsthm}");
+		array_push($output,"\\usepackage{amsmath}");
+		array_push($output,"\\usepackage{graphicx}");
+		array_push($output,"\\usepackage{fullpage}");
+		array_push($output,"\\usepackage{cite}");
+		array_push($output,"\\usepackage{url}");
+		array_push($output,"\\usepackage{titling}");	
 	}
 }
 function read_math (&$line) {
