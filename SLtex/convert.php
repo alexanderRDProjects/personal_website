@@ -80,7 +80,7 @@ foreach($input as &$line) {
 				$path = $path."_".$words[$path_index];
 			}
 		}
-		$words[0] = "\\begin{figure}[h!]\n\\includegraphics[scale=0.4]{".$path.".png}\n\\label{".$path."}\n\\caption{";
+		$words[0] = "\\begin{figure}[h!]\n\\includegraphics[scale=0.39]{".$path.".png}\n\\label{".$path."}\n\\caption{";
 		array_push($words,"}\n\\end{figure}");
 		var_dump($words);
 	}
