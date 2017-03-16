@@ -88,7 +88,7 @@ foreach($input as &$line) {
 				$path = $path."_".$words[$path_index];
 			}
 		}
-		array_push($words,"}\n\\end{figure}");
+		array_push($words,"}\n\\end{figure}\\newline");
 		$words = implode("_",$words);
 		$words = explode("_",$words);
 		$words[0] = "\\begin{figure}[h!]\n\\includegraphics[scale=0.39]{".$path.".png}\n\\label{".$path."}\n\\caption{";
