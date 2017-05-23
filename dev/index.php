@@ -13,14 +13,14 @@ include("template.php");
 <div class="row">
     <div class="col-sm-4">
 	<a href="https://www.heroku.com/">
-	<img src="heroku-logo.jpg" style="
+	<img src="\heroku-logo.jpg" style="
     width: 100%;
     height: 100%;
 "></a>
 	</div>
     <div class="col-sm-4">
 	<a href = "http://www.php.net/">
-	<img src="php-logo.gif" style="
+	<img src="\php-logo.gif" style="
     width: 60%;
     /* height: 100%; */
 "></a>
@@ -28,7 +28,7 @@ include("template.php");
 	
     <div class="col-sm-4">
 	<a href="http://getbootstrap.com/">
-	<img src="bootstrap-logo.png"/>
+	<img src="\bootstrap-logo.png"/>
 	</a></div>
   </div>
 </div>
