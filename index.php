@@ -1,4 +1,4 @@
 <?php
-url = $_GET["url"];
-echo url;
+$url = $_GET["url"];
+echo $url;
 ?>
