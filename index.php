@@ -8,4 +8,5 @@ if ($url == "") {
 } else {
 	include("template.php");
 	echo "<h1> Not found </h1> </body></html>";
+}
 ?>
