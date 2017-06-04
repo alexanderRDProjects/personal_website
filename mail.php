@@ -2,9 +2,9 @@
 $to      = 'contact@alexanderrdprojects.com';
 $subject = 'Automated Email';
 $message = 'This is a automated email please do not reply';
-$headers = 'From: no-reply@alexanderrdprojects.com' . "\r\n" .
+$headers = 'contact@alexanderrdprojects.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-echo mail($to, $subject, $message); //$headers);
+var_dump(mail($to, $subject, $message $headers));
 
 ?>
