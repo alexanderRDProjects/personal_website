@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Template</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
+	<style>
+	html{
+		overflow-x: hidden;
+	};
+	</style>
+</head>
+<body>
+<div class="row">
+<br>
+</div>
+<div class="row justify-content-center">
+	<div class="col-1" id="space_one"><br></div>
+	<div class="col" id="img"><img alt="" src="menu.png" /></div>
+	<div class="col-3" id = "text">Alexander Roberts Dunn Projects</div>
+	<div class="col" id="home" >Home</div>
+	<div class="col" id="about">About</div>
+	<div class="col" id="blog">Blog</div>
+	<div class="col" id="projects">Projects</div>
+	<div class="col" id="more">More</div>
+	<div class="col" id="space_two" ><br></div>
+	<div class="col" id="login">Login</div>
+	<div class="col" id="signup">Signup</div>
+	
+
+</div>
+
+<br><br>
+<div class="row">
+<div class="col"><br></div>
+<div class="col-9">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar at ante at tempor. Sed ultricies ullamcorper neque, vel viverra orci rhoncus nec. In et erat sit amet neque interdum pulvinar. Vestibulum interdum diam non ante posuere efficitur. Etiam at interdum mauris. Maecenas in cursus velit, sed tempor enim. Duis at odio non nulla porta porttitor. Praesent varius vel urna ac vehicula. Nulla laoreet metus eget tempor gravida.
+</p>
+<p>
+Curabitur lobortis nulla eu ante luctus, finibus laoreet nisi consectetur. Praesent quis nisl eget est aliquet accumsan quis eu lacus. Nulla aliquet dapibus pretium. Integer scelerisque lacus nec sem dictum, quis pretium nisl aliquam. Curabitur a mi at sem porttitor convallis. Nam eu rhoncus quam. Aenean quis diam eu ligula maximus dapibus. Phasellus sollicitudin in lectus ut eleifend. Sed et suscipit dui. Ut efficitur erat rutrum velit eleifend gravida. Aliquam vel sagittis dui, id tincidunt est. Nam ac suscipit nisl. In odio dui, venenatis in dui tristique, finibus porta metus. Nunc aliquam velit et eros hendrerit, eget bibendum enim euismod. Fusce fringilla vitae erat vitae dictum.
+</p>
+<p>
+Vivamus ac tellus bibendum, ornare leo eu, mollis arcu. In vulputate neque sit amet ipsum porta luctus. Integer quis venenatis turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut lacinia libero sed dolor ultrices, nec semper ligula rutrum. Etiam molestie pellentesque enim, vel accumsan felis. Integer ut nunc eu tortor congue finibus quis vitae mi.
+</p>
+<p>
+Maecenas semper eros nec leo porta, blandit porttitor orci laoreet. Nam pellentesque dolor ac efficitur eleifend. Nulla dictum, nulla vulputate blandit ultricies, enim erat consectetur tortor, in convallis eros velit et tellus. Praesent eget sem turpis. Suspendisse ornare leo vitae mauris mattis congue. Phasellus elementum ex eu pharetra porta. Pellentesque malesuada molestie risus, eu faucibus dolor aliquam auctor. Donec in tellus eget nisi cursus suscipit. Curabitur tristique vestibulum magna sit amet pretium. Pellentesque sodales massa vitae urna ultricies, non finibus ligula pellentesque. Integer suscipit mauris porta malesuada maximus.
+</p>
+<p>
+Ut sit amet ipsum dui. Integer rutrum euismod felis sed aliquet. Aenean bibendum mi in ante cursus convallis. Nam euismod mattis nulla, id commodo tortor gravida eget. Nulla venenatis lacus ut tellus rutrum dictum. Nulla eu dui leo. Nulla fringilla feugiat tellus aliquam tincidunt. Vestibulum pretium, ante non finibus hendrerit, orci nunc ultricies odio, in sollicitudin nisl dolor id ex. Phasellus sit amet dapibus dui.
+</p>
+</div>
+<div class="col"><br></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity=
+"sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<script>
+function resize_window(jQuery) {
+if ($(window).width() < 920){
+	 $("#about").hide();
+	 console.log("About Hidden");
+  }
+  if ($(window).width() < 820){
+	 $("#space_two").hide();
+	 console.log("space two Hidden");
+  }
+  if ($(window).width() < 770){
+	 $("#rand").hide();
+	 console.log("rand Hidden");
+  }
+  if ($(window).width() < 650){
+	 $("#text").hide();
+	 $("#img").show();
+	 console.log("text Hidden");
+  }
+  if ($(window).width() < 470){
+	console.log("switch to mobile design");
+	$("#img").show();
+	//$("#space_one").hide();
+	$("#space_two").show();
+	$("#projects").hide();
+	$("#login").hide();
+	$("#signup").hide();
+	$("#blog").hide();
+	$("#more").hide();
+  }
+  if ($(window).width() > 920){
+	 $("#about").show();
+	 console.log("About Shown");
+  }
+  if ($(window).width() > 470){
+	console.log("switch to mobile design");
+	$("#img").hide();
+	$("#space_two").hide();
+	//$("#space_two").show();
+	$("#projects").show();
+	$("#login").show();
+	$("#signup").show();
+	$("#blog").show();
+	$("#more").show();
+  }
+  if ($(window).width() > 820){
+	 $("#space_two").show();
+	 console.log("space two shown");
+  }
+  if ($(window).width() > 770){
+	 $("#rand").show();
+	 console.log("rand Shown");
+  }
+  if ($(window).width() > 650){
+	 $("#text").show();
+	 console.log("text Shown");
+  } 
+  else  {
+	console.log("width is "+$(window).width())
+  }
+}
+$(window).resize(resize_window);
+$(document).ready(resize_window);
+</script>
+</body>
+</html>
