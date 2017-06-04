@@ -12,23 +12,23 @@
 	</style>
 </head>
 <body>
-<div class="row">
-<br>
+<div class="row justify-content-center">
+<div class="col-1"><br></div>
+<div class="col" id="top_title"><center>Alexander Roberts Dunn Projects</center></center></div>
+<div class="col-1"><br></div>
 </div>
 <div class="row justify-content-center">
 	<div class="col-1" id="space_one"><br></div>
 	<div class="col" id="img"><img alt="" src="menu.png" /></div>
-	<div class="col-3" id = "text">Alexander Roberts Dunn Projects</div>
+	<div class="col-3" id = "title">Alexander Roberts Dunn Projects</div>
 	<div class="col" id="home" >Home</div>
 	<div class="col" id="about">About</div>
 	<div class="col" id="blog">Blog</div>
 	<div class="col" id="projects">Projects</div>
 	<div class="col" id="more">More</div>
 	<div class="col" id="space_two" ><br></div>
-	<div class="col" id="login">Login</div>
-	<div class="col" id="signup">Signup</div>
-	
-
+	<div class="col" id="login"><a onclick="login()" href="template.html#login">Login</a></div>
+	<div class="col" id="signup"><a onclick="signup()" href="template.html#signup">Signup</a></div>
 </div>
 
 <br><br>
@@ -60,6 +60,8 @@ Ut sit amet ipsum dui. Integer rutrum euismod felis sed aliquet. Aenean bibendum
 "sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 <script>
+login_active = true;
+signup_active = false;
 function resize_window(jQuery) {
 if ($(window).width() < 920){
 	 $("#about").hide();
@@ -74,13 +76,15 @@ if ($(window).width() < 920){
 	 console.log("rand Hidden");
   }
   if ($(window).width() < 650){
-	 $("#text").hide();
+	 $("#title").hide();
+	 $("#top_title").show();
 	 $("#img").show();
 	 console.log("text Hidden");
   }
   if ($(window).width() < 470){
 	console.log("switch to mobile design");
 	$("#img").show();
+	$("#home").show();
 	//$("#space_one").hide();
 	$("#space_two").show();
 	$("#projects").hide();
@@ -94,7 +98,8 @@ if ($(window).width() < 920){
 	 console.log("About Shown");
   }
   if ($(window).width() > 470){
-	console.log("switch to mobile design");
+	console.log("switch out of mobile design");
+	$("#home").hide();
 	$("#img").hide();
 	$("#space_two").hide();
 	//$("#space_two").show();
@@ -113,15 +118,40 @@ if ($(window).width() < 920){
 	 console.log("rand Shown");
   }
   if ($(window).width() > 650){
-	 $("#text").show();
+	 $("#title").show();
+	 $("#top_title").hide();
 	 console.log("text Shown");
   } 
   else  {
 	console.log("width is "+$(window).width())
   }
 }
+function load_window(jQuery) {
+	if(window.location.hash) {
+      var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+      alert ("TODO code "+hash);
+	  if (hash == "login"){
+		login_active = true;
+	  }
+	  if (hash == "login"){
+		signup_active = true;
+	  }
+      // hash found
+  }
+  resize_window(jQuery)
+}
+function signup(){
+	if (signup_active==false) {
+	    alert("TODO code signup")
+	}
+}
+function login(){
+	if (login_active==false) {
+	    alert("TODO code login")
+	}
+}
 $(window).resize(resize_window);
-$(document).ready(resize_window);
+$(document).ready(load_window);
 </script>
 </body>
 </html>
