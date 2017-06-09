@@ -1,14 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="root">
 <head>
+	<link rel='shortcut icon' src='https://alexander-rd.herokuapp.com/favicon.ico' type='image/x-icon'/ >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="434726568124-obcv7f1fmpqse2gard1nh55513av5vff.apps.googleusercontent.com">
 	<title>Template</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
 	<style>
+	div {
+		z-index:0;
+	}
 	html{
 		overflow-x: hidden;
 	};
+	.login_box {
+		position: fixed;
+	width: 340px;
+	height: 280px;
+	top: 50%;
+	left: 50%;
+	}
+	.popup {
+		background-color:#cff9f7;
+		text-align:center;
+		position: fixed;
+		width: 50%;
+		height: 80%;
+		top: 10%;
+		left: 25%;
+	}
+	#login_container {
+		height:100%
+		background: #fff;
+		border-radius: 3px;
+		border: 1px solid #ccc;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+	}
+	form {
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	label {
+		color: #555;
+		display: inline-block;
+		margin-left: 18px;
+		padding-top: 10px;
+		font-size: 14px;
+	}
+	p a {
+		font-size: 11px;
+		color: #aaa;
+		float: right;
+		margin-top: -13px;
+		margin-right: 20px;
+		-webkit-transition: all .4s ease;
+		-moz-transition: all .4s ease;
+		transition: all .4s ease;
+	}
+	p a:hover {
+		color: #555;
+	}
+	input {
+		font-family: "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 12px;
+		outline: none;
+	}
+	input[type=text],
+	input[type=password] {
+		color: #777;
+		padding-left: 10px;
+		margin: 10px;
+		margin-top: 12px;
+		margin-left: 18px;
+		border: 1px solid #c7d0d2;
+		border-radius: 2px;
+		box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;
+		width: 290px;
+		height: 35px;
+	}
+	#lower {
+		background: #ecf2f5;
+		width: 100%;
+		height: 69px;
+		margin-top: 20px;
+	}
+	input[type=checkbox] {
+		margin-left: 20px;
+		margin-top: 30px;
+	}
+	.check {
+		margin-left: 3px;
+	}
+	input[type=submit] {
+		float: right;
+		margin-right: 20px;
+		margin-top: 20px;
+		width: 80px;
+		height: 30px;
+		font-size: 14px;
+		font-weight: bold;
+		color: #fff;
+		background-color: #acd6ef; /*IE fallback*/
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
+		background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+		background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+		border-radius: 30px;
+		border: 1px solid #66add6;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
+		cursor: pointer;
+	}
+	input[type=submit]:hover {
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
+		background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+		background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+	}
+	input[type=submit]:active {
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
+		background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+		background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+	}
 	</style>
 </head>
 <body>
@@ -27,10 +145,9 @@
 	<div class="col" id="projects">Projects</div>
 	<div class="col" id="more">More</div>
 	<div class="col" id="space_two" ><br></div>
-	<div class="col" id="login"><a onclick="login()" href="template.html#login">Login</a></div>
+	<div class="col" id="login"><p onclick="login()">Login</p></div>
 	<div class="col" id="signup"><a onclick="signup()" href="template.html#signup">Signup</a></div>
 </div>
-
 <br><br>
 <div class="row">
 <div class="col"><br></div>
@@ -38,6 +155,7 @@
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar at ante at tempor. Sed ultricies ullamcorper neque, vel viverra orci rhoncus nec. In et erat sit amet neque interdum pulvinar. Vestibulum interdum diam non ante posuere efficitur. Etiam at interdum mauris. Maecenas in cursus velit, sed tempor enim. Duis at odio non nulla porta porttitor. Praesent varius vel urna ac vehicula. Nulla laoreet metus eget tempor gravida.
 </p>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
 <p>
 Curabitur lobortis nulla eu ante luctus, finibus laoreet nisi consectetur. Praesent quis nisl eget est aliquet accumsan quis eu lacus. Nulla aliquet dapibus pretium. Integer scelerisque lacus nec sem dictum, quis pretium nisl aliquam. Curabitur a mi at sem porttitor convallis. Nam eu rhoncus quam. Aenean quis diam eu ligula maximus dapibus. Phasellus sollicitudin in lectus ut eleifend. Sed et suscipit dui. Ut efficitur erat rutrum velit eleifend gravida. Aliquam vel sagittis dui, id tincidunt est. Nam ac suscipit nisl. In odio dui, venenatis in dui tristique, finibus porta metus. Nunc aliquam velit et eros hendrerit, eget bibendum enim euismod. Fusce fringilla vitae erat vitae dictum.
 </p>
@@ -59,8 +177,53 @@ Ut sit amet ipsum dui. Integer rutrum euismod felis sed aliquet. Aenean bibendum
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity=
 "sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div id="login_content" class="popup">
+<div id="login_container"> 
+<form>      
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password">
+<div id="lower">
+<input type="checkbox"><label for="checkbox">Keep me logged in</label>
+<input type="submit" value="Login">
+<input type ="submit" onclick="login_exit()" value="Exit">
+</form>
+</div><!--/ lower-->
+</div>
+<div>
+<p>Or use one of the following login options</p>
+<a href="#"><div class="g-signin2" data-onsuccess="onSignIn"></div></a>
+</div>
+
+</div>
+<div id="signup_content" class= "popup"><p>signup</p><p onclick="signup_exit()">exit</p></div>
 <script>
-login_active = true;
+//google
+var SignedIn = false
+function onSignIn(googleUser) {
+	var profile = googleUser.getBasicProfile();
+	SignedIn = true;
+	console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+	console.log('Name: ' + profile.getName());
+	console.log('Image URL: ' + profile.getImageUrl());
+	console.log('Email: ' + profile.getEmail());
+	//alert("signed in ajax call here");
+	var xmlhttp = new XMLHttpRequest();
+	console.log("userlogin.php?googleID=" +profile.getId()+"&Name="+profile.getName()+"&url="+profile.getImageUrl());
+	xmlhttp.open("GET", "userlogin.php?googleID=" +profile.getId()+"&Name="+profile.getName()+"&url="+profile.getImageUrl(), true);
+	xmlhttp.send();
+	console.log("login_request sent");
+}
+function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+
+//page layout
+//login_active = true;
 signup_active = false;
 function resize_window(jQuery) {
 if ($(window).width() < 920){
@@ -129,26 +292,61 @@ if ($(window).width() < 920){
 function load_window(jQuery) {
 	if(window.location.hash) {
       var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-      alert ("TODO code "+hash);
+      //alert ("TODO code "+hash);
 	  if (hash == "login"){
 		login_active = true;
+		$("html").css("overflow-y","hidden")
+		$("#login_content").show();
 	  }
-	  if (hash == "login"){
+	  else if (hash == "signup"){
 		signup_active = true;
+		$("html").css("overflow-y","hidden")
+		$("#signup_content").show();
+	  } else {
+	    alert("unknown hash");
+	    $("html").css("overflow-y","auto");
+	    $("#signup_content").hide();
+	    $("#login_content").hide();
 	  }
       // hash found
+  } else {
+	    //alert("blank hash or external scripting load home page");
+	    $("html").css("overflow-y","auto");
+	    $("#login_content").hide();
+		$("#signup_content").hide();
   }
   resize_window(jQuery)
 }
 function signup(){
 	if (signup_active==false) {
-	    alert("TODO code signup")
+	    //alert("TODO code login scripts")
+		$("#signup_content").show();
+		signup_active = true;
+		$("html").css("overflow-y","hidden")
+		window.location.hash='signup';
 	}
 }
+function signup_exit(){
+	signup_active = false;
+	$("html").css("overflow-y","auto");
+	$("#signup_content").hide();
+	window.location.hash = '';
+}
+login_active = false;
 function login(){
 	if (login_active==false) {
-	    alert("TODO code login")
+	    //alert("TODO code login scripts")
+		$("#login_content").show();
+		login_active = true;
+		$("html").css("overflow-y","hidden")
+		window.location.hash='login';
 	}
+}
+function login_exit(){
+	login_active = false;
+	$("html").css("overflow-y","auto");
+	$("#login_content").hide();
+	window.location.hash = '';
 }
 $(window).resize(resize_window);
 $(document).ready(load_window);
