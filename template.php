@@ -41,7 +41,7 @@ function signOut() {
       <a class="navbar-brand" href="/">Alexander Roberts Dunn Projects</a>
     </div>
     <ul class="nav navbar-nav">
-		<li class="active"><a href="/">Home</a></li>
+		<li><a href="/">Home</a></li>
 		<li><a href = "/about/">About</a></li>
 		<li><a href = "/blog/">Blog</a></li>
 		<li><a href = "/projects/">Projects</a></li>	
