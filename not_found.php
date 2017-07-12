@@ -11,5 +11,5 @@ document.body.style.overflowY = "hidden";​
 <h1> Page not Found </h1>
 </div>
 <div style='position:absolute;z-index:-15;left:0;top:0;width:100%;height:100%'>
-  <img src='seagull.jpg' style='width:100%;height:100%' alt='[]' />
+  <img src='/seagull.jpg' style='width:100%;height:100%' alt='[]' />
 </div>
