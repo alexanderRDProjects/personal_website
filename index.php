@@ -4,9 +4,7 @@ $url = $_GET["url"];
 if ($url == "") {
 	//index page 
 	include("template.php");
-	//TODO 
-	// write content for webpages
-	echo "<h1> index </h1> </body></html>";
+	include("home.php");
 } else {
 	// generate 404
 	include("template.php"); // insert nav bar
