@@ -35,20 +35,85 @@ function signOut() {
 </head>
 <body>
 <span class = "container-fluid">
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">Alexander Roberts Dunn Projects</a>
-    </div>
-    <ul class="nav navbar-nav">
-		<li><a href="/">Home</a></li>
-		<li><a href = "/about/">About</a></li>
-		<li><a href = "/blog/">Blog</a></li>
-		<li><a href = "/projects/">Projects</a></li>	
-		<li><a href = "/projects/random/">Random Project</a></li>
-    </ul>
-	<ul class="nav navbar-nav navbar-right">
-	<li><a href="#"><div class="g-signin2" data-onsuccess="onSignIn"></div></a></li> 
-	</ul>
-  </div>
-</nav>
+<div class="row justify-content-center">
+	<div class="col-1" id="space_one"><br></div>
+	<div class="col" id="img"><img alt="" src="menu.png" /></div>
+	<div class="col-3" id = "text">Alexander Roberts Dunn Projects</div>
+	<div class="col" id="home" >Home</div>
+	<div class="col" id="about">About</div>
+	<div class="col" id="blog">Blog</div>
+	<div class="col" id="projects">Projects</div>
+	<div class="col" id="more">More</div>
+	<div class="col" id="space_two" ><br></div>
+	<div class="col" id="login">Login</div>
+	<div class="col" id="signup">Signup</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity=
+"sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<script>
+function resize_window(jQuery) {
+if ($(window).width() < 920){
+	 $("#about").hide();
+	 console.log("About Hidden");
+  }
+  if ($(window).width() < 820){
+	 $("#space_two").hide();
+	 console.log("space two Hidden");
+  }
+  if ($(window).width() < 770){
+	 $("#rand").hide();
+	 console.log("rand Hidden");
+  }
+  if ($(window).width() < 650){
+	 $("#text").hide();
+	 $("#img").show();
+	 console.log("text Hidden");
+  }
+  if ($(window).width() < 470){
+	console.log("switch to mobile design");
+	$("#img").show();
+	//$("#space_one").hide();
+	$("#space_two").show();
+	$("#projects").hide();
+	$("#login").hide();
+	$("#signup").hide();
+	$("#blog").hide();
+	$("#more").hide();
+  }
+  if ($(window).width() > 920){
+	 $("#about").show();
+	 console.log("About Shown");
+  }
+  if ($(window).width() > 470){
+	console.log("switch to mobile design");
+	$("#img").hide();
+	$("#space_two").hide();
+	//$("#space_two").show();
+	$("#projects").show();
+	$("#login").show();
+	$("#signup").show();
+	$("#blog").show();
+	$("#more").show();
+  }
+  if ($(window).width() > 820){
+	 $("#space_two").show();
+	 console.log("space two shown");
+  }
+  if ($(window).width() > 770){
+	 $("#rand").show();
+	 console.log("rand Shown");
+  }
+  if ($(window).width() > 650){
+	 $("#text").show();
+	 console.log("text Shown");
+  } 
+  else  {
+	console.log("width is "+$(window).width())
+  }
+}
+$(window).resize(resize_window);
+$(document).ready(resize_window);
+</script>
