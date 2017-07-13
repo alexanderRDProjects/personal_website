@@ -17,7 +17,8 @@
 </div>
 <span class = "container-fluid">
 <nav class="navbar navbar-default">
-<div class="row justify-content-center">
+<div class="row justify-content-center" style="
+    background-color: rgba(238,238,238,0.5);>
 	<div class="col-1" id="space_one"><br></div>
 	<div class="col" id="img"><img alt="" src="menu.png" /></div>
 	<div class="col-3" id = "text">Alexander Roberts Dunn Projects</div>
@@ -37,7 +38,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity=
 "sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 <script>
 function resize_window(jQuery) {
 if ($(window).width() < 920){
