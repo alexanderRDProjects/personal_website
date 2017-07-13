@@ -30,30 +30,6 @@
 	
 
 </div>
-
-<br><br>
-<div class="row">
-<div class="col"><br></div>
-<div class="col-9">
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar at ante at tempor. Sed ultricies ullamcorper neque, vel viverra orci rhoncus nec. In et erat sit amet neque interdum pulvinar. Vestibulum interdum diam non ante posuere efficitur. Etiam at interdum mauris. Maecenas in cursus velit, sed tempor enim. Duis at odio non nulla porta porttitor. Praesent varius vel urna ac vehicula. Nulla laoreet metus eget tempor gravida.
-</p>
-<p>
-Curabitur lobortis nulla eu ante luctus, finibus laoreet nisi consectetur. Praesent quis nisl eget est aliquet accumsan quis eu lacus. Nulla aliquet dapibus pretium. Integer scelerisque lacus nec sem dictum, quis pretium nisl aliquam. Curabitur a mi at sem porttitor convallis. Nam eu rhoncus quam. Aenean quis diam eu ligula maximus dapibus. Phasellus sollicitudin in lectus ut eleifend. Sed et suscipit dui. Ut efficitur erat rutrum velit eleifend gravida. Aliquam vel sagittis dui, id tincidunt est. Nam ac suscipit nisl. In odio dui, venenatis in dui tristique, finibus porta metus. Nunc aliquam velit et eros hendrerit, eget bibendum enim euismod. Fusce fringilla vitae erat vitae dictum.
-</p>
-<p>
-Vivamus ac tellus bibendum, ornare leo eu, mollis arcu. In vulputate neque sit amet ipsum porta luctus. Integer quis venenatis turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut lacinia libero sed dolor ultrices, nec semper ligula rutrum. Etiam molestie pellentesque enim, vel accumsan felis. Integer ut nunc eu tortor congue finibus quis vitae mi.
-</p>
-<p>
-Maecenas semper eros nec leo porta, blandit porttitor orci laoreet. Nam pellentesque dolor ac efficitur eleifend. Nulla dictum, nulla vulputate blandit ultricies, enim erat consectetur tortor, in convallis eros velit et tellus. Praesent eget sem turpis. Suspendisse ornare leo vitae mauris mattis congue. Phasellus elementum ex eu pharetra porta. Pellentesque malesuada molestie risus, eu faucibus dolor aliquam auctor. Donec in tellus eget nisi cursus suscipit. Curabitur tristique vestibulum magna sit amet pretium. Pellentesque sodales massa vitae urna ultricies, non finibus ligula pellentesque. Integer suscipit mauris porta malesuada maximus.
-</p>
-<p>
-Ut sit amet ipsum dui. Integer rutrum euismod felis sed aliquet. Aenean bibendum mi in ante cursus convallis. Nam euismod mattis nulla, id commodo tortor gravida eget. Nulla venenatis lacus ut tellus rutrum dictum. Nulla eu dui leo. Nulla fringilla feugiat tellus aliquam tincidunt. Vestibulum pretium, ante non finibus hendrerit, orci nunc ultricies odio, in sollicitudin nisl dolor id ex. Phasellus sit amet dapibus dui.
-</p>
-</div>
-<div class="col"><br></div>
-</div>
-
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity=
