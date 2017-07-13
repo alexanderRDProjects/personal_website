@@ -22,18 +22,29 @@
     background-color: rgba(255, 255, 248, 0.75);
     font-size: medium;
 ">
+<style>
+#centertext {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    vertical-align: middle;
+}
+</style>
 <div class="row justify-content-center">
 	<div class="col-1" id="space_one"><br></div>
 	<div class="col" id="img"><img alt="" src="menu.png" /></div>
-	<div class="col-3" id = "text">Alexander Roberts Dunn Projects</div>
-	<div class="col" id="home" >Home</div>
-	<div class="col" id="about">About</div>
-	<div class="col" id="blog">Blog</div>
-	<div class="col" id="projects">Projects</div>
-	<div class="col" id="more">More</div>
+	<div class="col-3" id = "text"><p id="centertext">Alexander Roberts Dunn Projects</p></div>
+	<div class="col" id="home" ><p id="centertext">Home</p></div>
+	<div class="col" id="about"><p id="centertext">About</p></div>
+	<div class="col" id="blog"><p id="centertext">Blog</p></div>
+	<div class="col" id="projects"><p id="centertext">Projects</p></div>
+	<div class="col" id="more"><p id="centertext">More</p></div>
 	<div class="col" id="space_two" ><br></div>
-	<div class="col" id="login">Login</div>
-	<div class="col" id="signup">Signup</div>
+	<div class="col" id="login"><p id="centertext">Login</p></div>
+	<div class="col" id="signup"><p id="centertext">Signup</p></div>
 
 </div>
 </nav>
