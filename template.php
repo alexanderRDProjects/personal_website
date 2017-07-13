@@ -16,7 +16,10 @@
 <br>
 </div>
 <span class = "container-fluid">
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="
+    background-color: rgba(255, 255, 248, 0.75);
+    font-size: medium;
+">
 <div class="row justify-content-center">
 	<div class="col-1" id="space_one"><br></div>
 	<div class="col" id="img"><img alt="" src="menu.png" /></div>
