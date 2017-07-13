@@ -31,6 +31,7 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     vertical-align: middle;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 </style>
 <div class="row justify-content-center">
