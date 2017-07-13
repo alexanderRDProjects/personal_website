@@ -17,8 +17,7 @@
 </div>
 <span class = "container-fluid">
 <nav class="navbar navbar-default">
-<div class="row justify-content-center" style="
-    background-color: rgba(238,238,238,0.5);>
+<div class="row justify-content-center">
 	<div class="col-1" id="space_one"><br></div>
 	<div class="col" id="img"><img alt="" src="menu.png" /></div>
 	<div class="col-3" id = "text">Alexander Roberts Dunn Projects</div>
